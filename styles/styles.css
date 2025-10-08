@@ -1,0 +1,406 @@
+/*Cambio de fondo*/
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bitcount+Prop+Double+Ink:wght@100..900&family=Oi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SUSE:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background-color: #FAD63E;
+   margin: 0;
+  padding: 0;
+  height: 100%;
+  /*height: auto;
+  width: 100vw;*/
+  /*line-height: 1.5;
+  color: #032638;
+  font-family: "SUSE Mono";*/
+}
+
+
+h1 {
+  font-family: "Bungee Static", "Archivo BlackStatic", "SUSE", "roboto", "oi" 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, "Barriecito";
+}
+
+h2 {
+  font-family: "SUSE","Roboto", "Bungee Static", "oi";
+}
+
+h1,
+h2,
+h3,
+strong {
+  color: #011c2b;
+}
+
+a {
+  color: #a30cb1;
+ 
+}
+
+footer{
+  border-top: 4px solid #09862e;
+  background-color: #b9b0b0;
+  color: #0e0000;
+  padding: 20px;
+  text-align: left;
+  height: auto;
+  width: 100vw;
+  /*background-color: #06301c;*/
+  background-image: linear-gradient(
+    55deg, rgb(165, 221, 184) 0%, rgb(33, 241, 120) 70%);
+ /*paddding: 50%;*/
+}
+
+footer div img {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  border-radius: 50px 5px 70px 7px;
+}
+
+#boton-arriba{
+width: 40px;
+height: 40px;
+border-radius: 100%;
+border: 1px solid rgb(146, 5, 34);
+padding: 5px;
+background-color: #f2f5f7;
+position: fixed;
+bottom: 30px;
+right: 25px;
+}
+
+#boton-arriba:hover{
+  background-color: #09031f;
+  border-style: none;
+  width: 43px;
+  height: 43px;
+}
+
+.contacto svg{
+  width: 20px;
+  height: 20px;
+  color: #09031f;
+  scroll-padding-block: auto;
+
+}
+
+#contenedor-caja-footer{
+  display: plex;
+  justify-content: space-between;
+}
+ 
+#caja-mapa{
+  text-align: center;
+}
+
+#caja-copy{
+  text-align: center;
+}
+
+header {
+  background-color: #a30cb1;
+  height: 100%;
+  background-image: url("../image/jonatan-pie-9P_VNWgeOxo-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px, 20px;
+  /* text-align: center; */
+  /* margin: 0;
+  padding: 0;*/
+  padding: 3em 5em;
+
+}
+
+header img {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  border-radius: 50px 50px 70px 70px;
+  /* transition: transform 1s; */
+  transition: 0.3s ease;
+}
+
+header img:hover {
+  /* transform: rotate(360deg); */
+  transform: scale(1.2);
+}
+
+header a {
+  border: 1px, solid #a30cb1;
+  border-radius: 29486px;
+  color: #f7f4f5;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 60px;
+  text-transform: uppercase;
+  transform: rotate(360deg);
+  /* transition-property: none 5ms ease-out; */
+  /* transition-property: color, background; */
+}
+
+header a:hover {
+  background-color: #fff;
+  color: #110101;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  /*bottom: 40px;*/
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2.5px solid rgb(26, 61, 177);
+  background-color: #f2f5f7;
+}
+
+nav ul {
+  display: flex;
+  gap: 50px;
+  /*espacio entre elementos*/
+}
+
+nav img {
+  height: 50px;
+  width: 50px;
+  transition: 0.3s ease;
+}
+
+nav img:hover{
+  transform: rotate(360deg);
+  /*transform: scale(1.2);*/
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a:hover {
+  background-color: #092beb;
+  color: #dfd3d4;
+
+}
+
+nav li a {
+  padding: 8px 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: none 200ms ease-out;
+  color: rgb(26, 61, 177);
+}
+
+main {
+  max-width: 80%;
+  /*min-width:;*/
+  margin: 0 auto;
+
+}
+
+#texto-especial {
+  background: #74bb17;
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+  font-family: "Barriecito", "oi", "Roboto", serif;
+}
+
+.caja-especial {
+  border-left: 2px solid #061430;
+  border-bottom: 2px solid #eb2727;
+  border-right: 2px solid #061430;
+  border-top: 2px solid #eb2727;
+
+}
+
+#lista1 {
+  /* font-size:2em;  */
+  font-size: 24px;
+  font-family: "sans-serif", "arial";
+  list-style-type: none;
+}
+
+#lista2 {
+  font-size: 2em;
+  font-family: "arial";
+}
+
+.imagen-redondeada {
+  border-radius: 15px;
+  /* Esto redondea las cuatro esquinas */
+  width: 200px;
+  /* Opcional: ajusta el tamaño de la imagen */
+  height: 200px;
+  /* Opcional: ajusta el tamaño de la imagen */
+  border: 1px solid #000;
+  /* Opcional: añade un borde */
+  object-fit: cover;
+  /* Para que la imagen no se distorsione si no es cuadrada */
+}
+
+.imagen-circular {
+  border-radius: 50%;
+  /* Esto crea un círculo perfecto si la imagen es cuadrada */
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.contenedor {
+  display: flex;
+  /* Esto alinea los elementos horizontalmente */
+}
+
+.caja {
+  width: 10px;
+  height: 10px;
+  /* Esto cambia la altura y la anchura */
+  /*margin-top:20px ;*/
+  /* Esto pone la caja separada del top */
+  margin: 10px 5px 10px 60px;
+  /* Esto pone la caja separada por todos lados en sentido del reloj*/
+  padding: 100px;
+  /* Esto cambia la posicion del texto en la caja */
+  border-width: 5px;
+  border-color: rgb(15, 2, 2);
+  border-style: solid;
+}
+
+#caja-azul {
+  background-color: #092beb;
+  /* Esto cambia el color */
+}
+
+#caja-roja {
+  background-color: #f10a1e;
+  /* Esto cambia el color */
+}
+
+#caja-verde {
+  background-color: #14db67;
+  /* Esto cambia el color */
+  border-radius: 100%;
+}
+
+.boton {
+  width: 300px;
+  height: 20px;
+}
+
+#boton {
+  background-color: #dfd3d4;
+  /* Esto cambia el color */
+}
+
+.comentario {
+  width: 300px;
+  height: 150px;
+}
+
+#comentario {
+  background-color: #dfd3d4;
+  /* Esto cambia el color */
+}
+
+/* posicion, fondo y linea inferior de nav */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 2px solid #4E75FF;
+}
+
+/* escondo el cuadrado del checkbox */
+#menu {
+    display: none;
+}
+
+/* redimensiono el icono de hamburguesa */
+nav svg {
+    width: 50px;
+    height: 50px;
+}
+
+/* escondo el logo y la lista */
+.menu-desplegable {
+    display: none;
+}
+
+/* cuando el checkbox está marcado, hago el logo y la lista visibles */
+input:checked~.menu-desplegable {
+    display: block;
+    text-align: center;
+}
+
+/* redimensiono el logo */
+nav a img {
+    width: 30%;
+}
+nav img {
+    width: 30%;
+    height: 30%;
+}
+/* quito los estilos predeterminados de la lista */
+ul.menu-desplegable {
+    list-style: none;
+    padding: 0;
+}
+
+/* añado separacion a los elementos de la lista */
+ul.menu-desplegable li {
+    padding: 0.5em;
+}
+
+/* pongo estilo a los enlaces de la lista */
+ul.menu-desplegable a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #4E75FF;
+    font-size: 1.5em;
+    padding: 0.2em 0.4em;
+}
+
+/* cambio los estilos de los enlaces cuando el cursor esta sobre ellos */
+ul.menu-desplegable a:hover {
+    background-color: #4E75FF;
+    color: white;
+}
+
+/* Defino los estilos que se van a aplicar cuando el ancho de pantalla sea minimo 1000px */
+@media (min-width:1000px) {
+
+    /* escondo el icono hamburguesa y el checkbox */
+    nav input {
+        display: none;
+    }
+
+    nav label {
+        display: none;
+    }
+
+    /* muestro el nav completo */
+    ul.menu-desplegable {
+        display: flex;
+        gap: 50px;
+    }
+
+    a.menu-desplegable {
+        display: block;
+    }
+
+    /* redimensiono el logo */
+    a.menu-desplegable img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* añado la colocacion de los elementos del nav en horizontal */
+    nav {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

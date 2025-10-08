@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+#reloj {
+    width: 50vw;
+    height: 100%;
+    margin: 10px auto;
+    border: 2px solid cornflowerblue;
+    padding: 20px;
+    background-color: #f7f4f5;
+}
+#paneles-content {
+    width: 50vw;
+    height: 100%;
+    margin: 10px auto;
+    border: 2px solid cornflowerblue;
+    padding: 20px;
+    background-color: #f7f4f5;
+}
+/* escondemos los input radio*/
+.panel-input {
+    display: none;
+}
+
+/*input[name=panel]{     damos tipos de elementos, otra forma de refernciarlos
+input[type="radio"]{
+}*/
+
+h2 {
+  font-family: "SUSE","Roboto", "Bungee Static", "oi";
+  text-align: center;
+}
+/* estilo del label del panel*/
+
+.panel label {
+    display: block;
+    border: 1px solid coral;
+    height: 1.8em;
+    padding: 5px 0 0 15px;
+    font-weight: 600;
+    width: calc(100% - 15px);
+}
+
+/*pading lateral*/
+
+.panel p {
+    padding: 0 15px;
+}
+
+.panel {
+    margin-bottom: 0px;
+}
+
+/*estilos plegado*/
+.contenido {
+    width: 100%;
+    /*border: 1px solid rgb(85, 22, 35);*/
+    border: 1px solid transparent;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+/*estilos desplegado*/
+.panel-input:checked~div.contenido {
+    height: auto;/*cambio el alto*/
+    border-color: coral;
+    border-top: none;
+    margin-bottom: 4px;
+}
+
+
+/* **************     header  **************      */
+header {
+    background-color: #a30cb1;
+    height: 100%;
+    background-image: url("../image/jonatan-pie-9P_VNWgeOxo-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px, 20px;
+    /* text-align: center; */
+    /* margin: 0;
+  padding: 0;*/
+    padding: 3em 5em;
+
+}
+
+header img {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    border-radius: 50px 50px 70px 70px;
+    /* transition: transform 1s; */
+    transition: 0.3s ease;
+}
+
+header img:hover {
+    /* transform: rotate(360deg); */
+    transform: scale(1.2);
+}
+
+header a {
+    border: 1px, solid #a30cb1;
+    border-radius: 29486px;
+    color: #f7f4f5;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 60px;
+    text-transform: uppercase;
+    transform: rotate(360deg);
+    /* transition-property: none 5ms ease-out; */
+    /* transition-property: color, background; */
+}
+
+header a:hover {
+    background-color: #fff;
+    color: #110101;
+}
+
+/****************************************************************/
+body {
+    /*quito estilos predeterminados*/
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: linear-gradient(45deg, rgb(235, 155, 7), rgb(221, 187, 63));
+    display: fixed;
+    top: 0;
+    padding: 18px;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    gap: 10px;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    padding: 10px;
+    margin: auto;
+    /*background-color: rgb(43, 43, 150);
+    color: rgb(26, 66, 126);*/
+    /*color: #4E75FF;
+     background-color: white;
+    border-radius: 10px;
+    font-weight: 600;*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+nav ul li a:hover {
+    background: linear-gradient(45deg, rgb(199, 138, 24), blue);
+}
+
+.submenu {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /*relativa al cuerpo del padre, la saco del flujo*/
+    background-color: chartreuse;
+}
+
+.submenu a {
+    display: none;
+}
+
+.menu-desplegable li:hover .submenu a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #4E75FF;
+    font-size: 1.5em;
+    padding: 0.2em 0.4em;
+}
+
+
+
+/* pongo estilo a los enlaces de la lista */
+ul.menu-desplegable a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #4E75FF;
+    font-size: 1.5em;
+    padding: 0.2em 0.4em;
+}
+
+/* cambio los estilos de los enlaces cuando el cursor esta sobre ellos */
+ul.menu-desplegable a:hover {
+    background-color: #4E75FF;
+    color: white;
+}
+
+
+/* Defino los estilos que se van a aplicar cuando el ancho de pantalla sea minimo 1000px */
+@media (min-width:1000px) {
+
+    /* escondo el icono hamburguesa y el checkbox */
+    nav input {
+        display: none;
+    }
+
+    nav label {
+        display: none;
+    }
+
+    /* muestro el nav completo */
+    ul.menu-desplegable {
+        display: flex;
+        gap: 40px;
+    }
+
+    a.menu-desplegable {
+        display: block;
+    }
+
+    /* redimensiono el logo */
+    a.menu-desplegable img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* añado la colocacion de los elementos del nav en horizontal */
+    nav {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

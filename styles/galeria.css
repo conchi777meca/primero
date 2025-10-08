@@ -1,0 +1,172 @@
+/* posicion, fondo y linea inferior de nav */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    border-bottom: 2px solid #4E75FF;
+}
+
+/* escondo el cuadrado del checkbox */
+#menu {
+    display: none;
+}
+
+/* redimensiono el icono de hamburguesa */
+nav svg {
+    width: 50px;
+    height: 50px;
+}
+
+/* escondo el logo y la lista */
+.menu-desplegable {
+    display: none;
+}
+
+/* cuando el checkbox está marcado, hago el logo y la lista visibles */
+input:checked~.menu-desplegable {
+    display: block;
+    text-align: center;
+}
+
+/* redimensiono el logo */
+nav a img {
+    width: 30%;
+}
+
+/* quito los estilos predeterminados de la lista */
+ul.menu-desplegable {
+    list-style: none;
+    padding: 0;
+}
+
+/* añado separacion a los elementos de la lista */
+ul.menu-desplegable li {
+    padding: 0.5em;
+}
+
+/* pongo estilo a los enlaces de la lista */
+ul.menu-desplegable a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #4E75FF;
+    font-size: 1.5em;
+    padding: 0.2em 0.4em;
+}
+
+/* cambio los estilos de los enlaces cuando el cursor esta sobre ellos */
+ul.menu-desplegable a:hover {
+    background-color: #4E75FF;
+    color: white;
+}
+
+/* Pongo las noticas con imagen float a la izquierda, derecha o ninguno */
+.noticia{
+    max-width: 80vw;
+    margin:auto;
+    line-height: 1.5;
+}
+
+.noticia__img--left{
+    max-width:  40vw;
+    /* float: left;*/
+    float: right;
+    /* float: none; */
+    margin-right: 1em;
+}
+/* @media only screen and (max-width: 990px) {
+  body {
+    background-color: lightblue;
+  }
+}*/
+
+
+/*          galeria          */
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap; /*salta linea*/
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: auto;
+
+}
+.galeria img{
+    /* calcula el ancho para dos columnas restando el espacio del margen*/
+    width: calc(50% - 1em);
+    margin: 0.5em;
+    filter: sepia(70%); /* añado filtro en sepia*/
+}
+.galeria img:hover{
+    transform: scale(1.1); /* la imagen se amplia*/
+    filter: none; /* quito el filtro*/
+    transition: all 0.3s ease-in-out; /*modifico como se hace la transicion de las propiedades de normal a hover. /propiedad/tiempo/modo/ */
+}
+
+@media screen and (min-width:1000px){
+    .noticia{
+        max-width: 60vw;
+    }
+  
+    .noticia p{
+        font-size: 1.5em ;
+    }    
+   
+    .noticia h1{
+        font-size: 3em ;
+    }
+    
+     body {
+        background-color: lightblue;
+    }
+
+     .galeria{
+        max-width: 60vw;
+
+    }
+    .galeria img{
+        /*calcula el ancho para 3 columnas restando el espacio de margen*/
+    width: calc(33.33% - 1em); 
+    margin: 0.5em;
+
+}
+}
+
+/* Defino los estilos que se van a aplicar cuando el ancho de pantalla sea minimo 1000px */
+@media (min-width:1000px) {
+
+    /* escondo el icono hamburguesa y el checkbox */
+    nav input {
+        display: none;
+    }
+
+    nav label {
+        display: none;
+    }
+
+    /* muestro el nav completo */
+    ul.menu-desplegable {
+        display: flex;
+        gap: 50px;
+    }
+
+    a.menu-desplegable {
+        display: block;
+    }
+
+    /* redimensiono el logo */
+    a.menu-desplegable img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* añado la colocacion de los elementos del nav en horizontal */
+    nav {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+}
