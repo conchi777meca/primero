@@ -4,15 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ejemplo :checked</title>
-  <style>
+  <!--<style>
     input[type="checkbox"]:checked + label {
       color: green;
       font-weight: bold;
     }
-  </style>
+  </style>-->
+  <link rel="stylesheet" href="../styles/checked.css">
 </head>
 <body>
-  <input type="checkbox" id="check1">
-  <label for="check1">Opción seleccionada</label>
+  <!--<input type="checkbox" id="check1">
+  <label for="check1">Opción seleccionada</label>-->
+
+<ul id="tabs">
+     <li><a href="#tab1">Tab 1</a></li>
+     <li><a href="#tab2">Tab 2</a></li>
+     <li><a href="#tab3">Tab 3</a></li>
+</ul>
+<div id="container">
+   <div class="content">
+        <a name="tab0" id="tab0"></a> <!--inicio en blanco-->
+    </div>
+    <div class="content">
+        <a name="tab1" id="tab1"></a>
+        <h2>Tab 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetuer. Tempor amet esse elit anim minim velit veniam. Commodo. Id ut et est esse...</p>
+    </div>
+    <div class="content">
+        <a name="tab2" id="tab2"></a>
+        <h2>Tab 2</h2>
+        <p>Ad voluptate ut nulla in ad laboris. Magna duis laboris. Culpa culpa et ad nostrud mollit dolore sint ex. Consequat ex.</p>
+    </div>
+    <div class="content">
+        <a name="tab3" id="tab3"></a>
+        <h2>Tab 3</h2>
+        <p>Exercitation aute mollit eu anim in enim cupidatat. Anim id consequat aute ex proident incididunt exercitation...</p>
+    </div>
+</div>
+
 </body>
+
 </html>
