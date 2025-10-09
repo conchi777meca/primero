@@ -24,10 +24,7 @@
     text-align: center;
 }
 
-#tabs li a:hover {
-    background-color: #ededed;
-}
-
+#tabs li a:hover, 
 #tabs li a:active {
     background-color: #ededed;
 }
@@ -45,12 +42,23 @@ div.content {
 
 #container {
     /* clear: left;
-    clear: right; */
+    clear: right;
+    clear: none;  */
     clear: both;
-    /* clear: none;  */
     /*para indicar que no se permiten elementos flotantes a su izqu
     ierda, derecha o ambos lados*/
     height: 400px; /* 350px + 25px (padding sx) + 25px (padding dx) */
     overflow: hidden;
-    /* overflow:scroll; */
+     /*   overflow:scroll; */
+}
+
+/* .content .tab1:after{
+    left: 122px;
+}
+.content .tab2:after{
+    left: 210px;
+} */
+.content .tab3:after{
+    left: 303px;
+    border-top: 0px;
 }
