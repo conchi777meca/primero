@@ -96,6 +96,10 @@ ul.menu-desplegable a:hover {
     width: calc(50% - 1em);
     margin: 0.5em;
     filter: sepia(70%); /* añado filtro en sepia*/
+    /*pongo sombra*/
+    background-color: #3498db;
+    border-radius: 10%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
 }
 .galeria img:hover{
     transform: scale(1.1); /* la imagen se amplia*/
