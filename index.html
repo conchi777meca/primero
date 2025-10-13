@@ -4,69 +4,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi blog inicial</title>
+  <title>Mi Blog de Naturaleza</title>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="shortcut icon" href="image/header.png" type="image/x-icon">
 </head>
 
 <body>
-  <a
-    href="https://unsplash.com/es/fotos/las-montanas-y-las-nubes-son-iluminadas-por-el-sol-poniente-7GdwckDlP6k/"></a>
+  <a href="https://unsplash.com/es/fotos/las-montanas-y-las-nubes-son-iluminadas-por-el-sol-poniente-7GdwckDlP6k/"></a>
 
+  <!-- Header de la página -->
   <header id="header">
     <img src="image/mundonatural.png">
-    <h1><em>Blog con header</em></h1>
+    <h1><em>Blog de Naturaleza</em></h1>
     <p>
-      <a href="">Botón</a>
+      <!-- <a href="">Botón</a> -->
+      Foto de <a
+        href="https://unsplash.com/es/@r3dmax?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jonatan
+        Pie</a> en <a
+        href="https://unsplash.com/es/fotos/dos-excursionistas-se-paran-en-una-cresta-montanosa-geotermica-9P_VNWgeOxo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
     </p>
-    
   </header>
 
-  <!--Barra de navegacion-->
-   <nav>
-      <input type="checkbox" name="menu" id="menu">
-      <label for="menu"> 
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-</svg></label>
+  <!-- Barra de navegacion -->
+  <nav>
+    <input type="checkbox" name="menu" id="menu">
+    <label for="menu">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </label>
 
     <a class="menu-desplegable" href="index.html"><img src="image/mundonatural.png" alt="logo de inicio"></a>
-      <ul class="menu-desplegable">
-        <li><a href="pages/checked.html">Nosotros</a></li>
-        <li><a href="pages/galeria.html">Servicios</a></li>
-        <li><a href="pages/float.html">Contacto</a></li>
-        <li><a href="pages/paneles.html">Paneles</a></li>
-      </ul>
-    </nav>
+   
+    <ul class="menu-desplegable">
+      <li><a href="pages/checked.html">Nosotros</a></li>
+      <li><a href="pages/galeria.html">Servicios</a></li>
+      <li><a href="pages/float.html">Contacto</a></li>
+      <li><a href="pages/paneles.html">Paneles</a></li>
+    </ul>
+  </nav>
 
 
 
 
   <main>
+    
+   <!-- Primer script que dice la edad si le das el año de nacimiento -->
+   <input type="number" placeholder="Pon tu año de nacimiento" id="inputAnioNac">
+   <p id="resultado"></p>
+   <button onclick="calcularEdad()">Calcula tu Edad</button>
+ 
+
+
     <section id="lista-nosotros">
-      <p>NNN Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sunt at amet harum exercitationem odio
-        praesentium, id tenetur natus sit ad nesciunt nobis tempore iste minima quae, nulla ex fugiat non eius! Quam
-        quasi accusamus adipisci labore non voluptas architecto deleniti facere voluptatem harum doloremque pariatur
-        expedita suscipit blanditiis iure tempore a, magnam velit fuga debitis consequuntur, laboriosam molestiae sunt
-        eveniet. Porro quis, atque unde fugit nostrum sunt recusandae perspiciatis, sit temporibus perferendis
-        reprehenderit cupiditate laboriosam eum ratione! Reiciendis assumenda tempore recusandae quis ut alias, itaque
-        non. Asperiores veniam iure culpa non blanditiis quia excepturi dolorum, error, porro vero rem.</p>
-        <p>NNN Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sunt at amet harum exercitationem odio
-        praesentium, id tenetur natus sit ad nesciunt nobis tempore iste minima quae, nulla ex fugiat non eius! Quam
-        quasi accusamus adipisci labore non voluptas architecto deleniti facere voluptatem harum doloremque pariatur
-        expedita suscipit blanditiis iure tempore a, magnam velit fuga debitis consequuntur, laboriosam molestiae sunt
-        eveniet. Porro quis, atque unde fugit nostrum sunt recusandae perspiciatis, sit temporibus perferendis
-        reprehenderit cupiditate laboriosam eum ratione! Reiciendis assumenda tempore recusandae quis ut alias, itaque
-        non. Asperiores veniam iure culpa non blanditiis quia excepturi dolorum, error, porro vero rem.</p>
+      <p>Un amante de la naturaleza es una persona que encuentra bienestar en la conexión con su entorno natural,
+        caracterizándose por su capacidad de asombro, su búsqueda de tranquilidad y la inspiración que encuentra en los
+        elementos naturales como amaneceres o paisajes. Estas personas suelen ser reflexivas, flexibles, adaptables y
+        prudentes, gracias a las lecciones que extraen del propio medio ambiente, el cual les enseña sobre los ciclos,
+        la calma y la importancia del respeto por la vida.</p>
+      <h2>Rasgos y comportamientos</h2>
+      <h3>Conexión y asombro:</h3>
+      <p>Sienten una profunda conexión con la naturaleza y disfrutan de las experiencias al aire libre. Se emocionan al
+        contemplar elementos como el amanecer o las estrellas.</p>
+      <h3>Búsqueda de bienestar:</h3>
+      <p>Consideran el contacto con la naturaleza como una fuente importante de salud física, mental y emocional.</p>
+      <h3>Capacidad de reflexión:</h3>
+      <p>El tiempo a solas en la naturaleza les permite reflexionar y encontrar claridad, lo que a menudo se traduce en
+        una toma de decisiones más pausada y consciente.</p>
+      <h3>Flexibilidad y adaptabilidad:</h3>
+      <p>Al estar expuestos a los cambios constantes del medio ambiente, desarrollan la habilidad de adaptarse a
+        diferentes situaciones de forma flexible.</p>
+      <h3>Respeto y humildad:</h3>
+      <p>La naturaleza les enseña a respetar los ritmos y ciclos de la vida, lo que fomenta la humildad y la tolerancia
+        hacia los demás.</p>
+      <h3>Inquietud:</h3>
+      <p>A menudo, son personas curiosas que buscan constantemente nuevos lugares y desafíos para explorar.</p>
+      <h3>Prudencia:</h3> 
+      <p>Desarrollan un sentido de cautela y previsión, aprendiendo a actuar con prudencia para evitar daños
+      innecesarios.</p>
+      <h2>Habilidades transferibles al trabajo</h2>
+      <h3>Capacidad de análisis:</h3>
+      <p>Su habilidad para observar y analizar su entorno se puede trasladar al ámbito laboral para
+      comprender mejor las necesidades de una empresa.</p>
+      <h3>Gestión de conflictos:</h3>
+      <p>Su temple y valentía al afrontar situaciones al aire libre se reflejan en su capacidad para
+      manejar conflictos con iniciativa.</p>
+      <h3>Liderazgo y resiliencia:</h3>
+      <p>La experiencia en la naturaleza puede dotarles de la resiliencia necesaria para afrontar
+      retos, mientras que la reflexión les ayuda a tomar decisiones con serenidad. </p>
     </section>
     <section id="lista-servicios">
       <p>SSS Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
         eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
         fugiat id mollitia!</p>
-        <p>SSS Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
+      <p>SSS Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
         eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
         fugiat id mollitia!</p>
-        <p>SSS Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
+      <p>SSS Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
         eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
         fugiat id mollitia!</p>
     </section>
@@ -88,112 +123,69 @@
         consequatur cupiditate recusandae ipsam error, voluptates at atque, tempore reiciendis fugiat cumque voluptate
         commodi deleniti sapiente, adipisci culpa non officia architecto assumenda ab nesciunt tenetur. Molestiae
         tempora delectus impedit illum laudantium alias mollitia dolore minus voluptate, ducimus quis ex, quidem
-        exercitationem dignissimos dolorem itaque. Incidunt quo assumenda velit reprehenderit non et omnis earum,
-        pariatur reiciendis laboriosam. Unde maiores similique facilis hic tempora molestias, sequi ad nesciunt
-        voluptatibus numquam reprehenderit accusantium recusandae ipsam perspiciatis, iste vero cum minus est.
-        Consectetur, delectus? Temporibus sed deserunt, placeat enim possimus odio accusantium, quibusdam illum ex rem
-        obcaecati aut architecto ullam distinctio labore mollitia! Earum alias maiores fugiat quo quos facere dolorem
-        soluta. Voluptate ab est quasi eveniet ad voluptatem maiores praesentium dolorem obcaecati sunt! Consectetur
-        cupiditate mollitia saepe. Eius, expedita accusamus quo consectetur nemo adipisci sapiente eos ullam, autem
-        tenetur reiciendis aliquid vitae. Quibusdam doloremque dignissimos, ullam debitis vel sit maiores totam labore
-        quaerat itaque laborum facere similique quos? Commodi tempora, vitae eveniet recusandae cum a ea dicta
-        necessitatibus explicabo omnis, quidem nihil delectus obcaecati soluta at voluptatibus esse molestiae! Illum
-        perferendis, minus voluptate pariatur ullam sint optio ad a qui amet numquam et, necessitatibus veritatis vel?
-        Quos officia sint nihil pariatur autem. Accusamus, fugit. Hic, ipsam recusandae earum aliquam animi ullam fugiat
-        consectetur nihil suscipit beatae sapiente ea cupiditate. Ipsum asperiores ea alias repudiandae saepe nostrum
-        consequuntur, ratione qui nisi dolorem assumenda harum quod doloremque animi soluta eligendi incidunt vitae
-        mollitia minus corporis cum doloribus. Consequuntur quos veniam, rerum nesciunt praesentium excepturi molestias
-        aliquam reprehenderit? Quaerat debitis consectetur beatae unde. Nisi, modi? Repellat asperiores explicabo ullam
-        corporis. Sed, rem corrupti asperiores, nihil at alias minus corporis, quisquam facilis quam quia reprehenderit.
-        Praesentium unde quod molestiae asperiores illum dolores deserunt impedit esse! Itaque, distinctio tempora, qui
-        voluptates ipsum, ullam nisi esse aliquam veniam sed beatae dolor ratione unde delectus pariatur quibusdam
-        architecto cupiditate quos a. Quisquam, quibusdam ipsa quo debitis quia, perferendis sapiente repellendus
-        voluptatum nemo id, nam numquam saepe quis! Ab placeat, nostrum vitae, eos doloremque id amet sunt culpa cumque
-        iure ex itaque nam minus sint omnis ducimus? Laboriosam, odio. Magni ipsam mollitia eius quis, veniam dolore
-        iure architecto, facilis hic impedit inventore dolorem voluptatibus sint laudantium! Hic, culpa. Omnis, ea
-        voluptates. Atque repellendus perspiciatis facere reprehenderit distinctio impedit, accusantium eligendi nostrum
-        debitis aperiam animi cum architecto consequatur minima vel voluptate! Ut molestiae, dolore inventore
-        consequatur sapiente atque pariatur at iusto libero dolor sunt expedita, consequuntur iste quas perspiciatis
-        aliquid delectus? Distinctio, soluta perferendis reprehenderit maxime quod mollitia cumque veritatis nesciunt
-        accusantium debitis, perspiciatis dolore nobis aperiam incidunt laudantium ad. Cum molestias nostrum deleniti
-        explicabo consectetur maxime numquam necessitatibus labore assumenda expedita cupiditate, nobis illo debitis
-        alias vel, veritatis culpa officia corporis? Eveniet quasi aliquid soluta at totam perspiciatis debitis
-        blanditiis molestias. Perspiciatis reprehenderit harum voluptatibus? Libero reiciendis minima sed asperiores
-        beatae itaque ipsam ex nesciunt atque sit molestiae voluptas, maxime modi, fugit repellat est nam quis similique
-        eius sapiente! Nisi, ab provident. Cupiditate quaerat esse quidem quam aut aspernatur dolorem modi, repellat
-        reprehenderit explicabo quod tempore a laudantium tempora voluptas odit. Similique id accusamus architecto nam
-        dolore, quos veritatis fugiat, minima, doloribus a quibusdam quas nihil natus quo non? Sit necessitatibus quae,
-        veritatis dolor nulla quos sunt reiciendis perferendis, facere voluptatem, iste doloribus dolorum eaque amet ut
-        distinctio! Voluptates, facilis natus? Ex optio mollitia, obcaecati similique in enim molestiae incidunt
-        molestias, illum sint eligendi quam ullam fuga iste eius veritatis amet est, nemo perferendis! Ad incidunt nam
-        voluptate fuga odio eaque deleniti dolorem doloribus ullam ipsum odit voluptates, sint, earum dolore distinctio
-        doloremque ex, suscipit quam ut dolor exercitationem! Accusamus impedit saepe minima officia harum error, velit
-        maiores illum tenetur commodi molestiae voluptatum quibusdam iure, numquam reprehenderit repellendus iusto totam
-        cum ratione corrupti praesentium fugiat a doloremque non! Tempora vero repellat officia nesciunt, odio eos quos
-        dolore excepturi officiis esse id aliquam beatae pariatur ipsa voluptatem, consequuntur quibusdam eaque quas
-        minus? Sequi facere autem laudantium fugit omnis, ab natus impedit sint obcaecati, eligendi reiciendis
-        consequuntur aspernatur consequatur delectus optio laborum unde! Velit consequatur vel, optio ducimus eaque eius
-        quaerat similique consectetur quidem minima repudiandae ad!</p>
+        exercitationem dignissimos dolorem itaque. </p>
     </section>
-    <div class="caja" id="caja-azul">
+    <!-- <div class="caja" id="caja-azul">
       <p>
         <strong>AZUL</strong>
       </p>
-    </div>
+    </div> -->
 
   </main>
 
+  <!-- Footer de la página -->
   <footer>
     <div>
       <a href="#header">
-          <svg id="boton-arriba" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18" />
-          </svg>
+        <svg id="boton-arriba" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18" />
+        </svg>
       </a>
     </div>
 
-  <div id="contenedor-caja-footer">
+    <div id="contenedor-caja-footer">
       <a class="contacto" href="tel:+34 600000000">
-         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
-         </svg>Teléfono: +34 600000000</a>
-  </div>
-  <div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+        </svg>Teléfono: +34 600000000</a>
+    </div>
+    
+    <div>
       <a class="contacto" href="micorreo@gmail.com">
-         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z"  />
-         </svg>micorreo@gmail.com</a>
-  </div>
-</div>
-  
- <div id="caja-mapa">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
+          className="size-6">
+          <path strokeLinecap="round" strokeLinejoin="round"
+            d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z" />
+        </svg>micorreo@gmail.com</a>
+    </div>
+    </div>
+
+    <div id="caja-mapa">
       <p>Nuestra dirección en Madrid es <strong>General Palanca, 26</strong> y <strong>ubicación:</strong></p>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.432913091531!2d-3.699646759261554!3d40.399259456820985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42263168afe427%3A0x97f8b89dc1f1d175!2sGrupo%20Col%C3%B3n%20IECM-%20General%20Palanca%2026!5e0!3m2!1ses!2ses!4v1758702300400!5m2!1ses!2ses"
         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
       <br><br>
- </div>
-    
- <p>Escribe tu <strong>correo</strong>:</p>
-   <div class="boton" id="boton">
- </div><br>
-    
- <p>Escribe tu <strong>comentario</strong>:</p>
-   <div class="comentario" id="comentario">
- </div><br>
+    </div>
 
- <div id="caja-copy">
+    <p>Escribe tu <strong>correo</strong>:</p>
+    <div class="boton" id="boton">
+    </div><br>
+
+    <p>Escribe tu <strong>comentario</strong>:</p>
+    <div class="comentario" id="comentario">
+    </div><br>
+
+    <div id="caja-copy">
       <p><strong>Copyright 2025 - CMCM&copy;</strong></p>
-      Foto de <a
-      href="https://unsplash.com/es/@r3dmax?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jonatan
-      Pie</a> en <a
-      href="https://unsplash.com/es/fotos/dos-excursionistas-se-paran-en-una-cresta-montanosa-geotermica-9P_VNWgeOxo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>  
- </div>
- 
-</footer>
-<!-- -->
+    </div>
+
+  </footer>
+  <!-- -->
   <h1 style="text-align: center;">Botánica en la Península Ibérica</h1>
 
   <h2>Índice:</h2>
@@ -364,7 +356,7 @@
   </div>
 
   <hr><br>
-<!--
+  <!--
   <footer>
     <div>
       <p><strong>Copyright 2025 - CMCM&copy;</strong></p>
@@ -388,6 +380,11 @@
     </div><br>
 
   </footer>-->
+
+
+<script src="js/index.js"></script>
+
+
 </body>
 
 </html>
