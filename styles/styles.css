@@ -37,6 +37,21 @@ a {
   color: #a30cb1;
 }
 
+/* Pongo las noticas con imagen float a la izquierda, derecha o ninguno */
+.noticia{
+    max-width: 80vw;
+    margin:auto;
+    line-height: 1.5;
+}
+
+.noticia__img--left{
+    max-width:  40vw;
+    /* float: left;*/
+    float: right;
+    /* float: none; */
+    margin-right: 1em;
+}
+
 footer{
   border-top: 4px solid #09862e;
   background-color: #b9b0b0;
