@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=SUSE:ital,wght@0,100..900;1,100..900&display=swap');
  */
+
 /*Cambio de fondo*/
 
 body {
@@ -40,16 +41,25 @@ a {
 /* Pongo las noticas con imagen float a la izquierda, derecha o ninguno */
 .noticia{
     max-width: 80vw;
-    margin:auto;
+    //margin:20px 20px 20px 20px;
     line-height: 1.5;
+    /* margin-left: 1em;
+    padding-left: 1em; */
+    overflow: hidden;
 }
 
 .noticia__img--left{
     max-width:  40vw;
+        margin:0px 20px 0px 20px;
     /* float: left;*/
     float: right;
     /* float: none; */
-    margin-right: 1em;
+    /* margin-right: 1em; */
+}
+.noticia__img--right{
+    max-width:  40vw;
+    float: left;
+    margin:0px 20px 0px 20px;
 }
 
 footer{
@@ -155,10 +165,10 @@ header img:hover {
   /* transition-property: color, background; */
 /*} */
 
-header a:hover {
+/* header a:hover {
   background-color: #fff;
   color: #110101;
-}
+} */
 
 nav {
   position: sticky;
@@ -381,6 +391,31 @@ ul.menu-desplegable a:hover {
     background-color: #4E75FF;
     color: white;
 }
+
+/*          galeria          */
+
+#grid {
+ display: grid;
+  height: auto;
+ // grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: auto;
+   
+}
+
+#grid > div {
+  background-color: rgb(192, 233, 192);
+  text-align: center;
+  padding: 20px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 1);
+}
+#grid > :hover{
+    transform: scale(1.1); /* la imagen se amplia*/
+    filter: none; /* quito el filtro*/
+    transition: all 0.3s ease-in-out; /*modifico como se hace la transicion de las propiedades de normal a hover. /propiedad/tiempo/modo/ */
+}
+
+
 
 /* Defino los estilos que se van a aplicar cuando el ancho de pantalla sea minimo 1000px */
 @media (min-width:1000px) {
