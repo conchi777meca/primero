@@ -1,0 +1,27 @@
+h1,h2,h3 {
+  /*font-family: "Bungee Static", "Archivo BlackStatic", "SUSE", "roboto", "oi" 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, "Barriecito";*/
+  font-family: "SUSE","Roboto", "Bungee Static", "oi";
+}
+
+
+h1 {
+  color: #011c2b;
+ text-align: center;
+}
+
+a {
+  color: #a30cb1;
+}
+
+#lista1 {
+  /* font-size:2em;  */
+  font-size: 24px;
+  font-family: "sans-serif", "arial";
+  list-style-type: none;
+  margin-top: 200px;
+}
+
+#lista2 {
+  font-size: 2em;
+  font-family: "arial";
+}
