@@ -6,7 +6,7 @@ h1,h2,h3 {
 
 h1 {
   color: #011c2b;
- text-align: center;
+  text-align: center;
 }
 
 a {
@@ -15,13 +15,118 @@ a {
 
 #lista1 {
   /* font-size:2em;  */
-  font-size: 24px;
+  font-size: 19px;
   font-family: "sans-serif", "arial";
   list-style-type: none;
-  margin-top: 200px;
+   padding-top: 200px; 
+/* z-index: 1; */
 }
 
 #lista2 {
+  font-size: 1em;
+  font-family: "arial";
+   padding-top: 200px; 
+}
+
+#lista-de-imagenes {
   font-size: 2em;
   font-family: "arial";
+   padding-top: 150px; 
 }
+
+#lista-de-naturaleza {
+  font-size: 2em;
+  font-family: "arial";
+   padding-top: 150px; 
+}
+
+.imagen-redondeada {
+  border-radius: 15px;
+  /* Esto redondea las cuatro esquinas */
+  width: 200px;
+  /* Opcional: ajusta el tamaño de la imagen */
+  height: 200px;
+  /* Opcional: ajusta el tamaño de la imagen */
+  border: 1px solid #000;
+  /* Opcional: añade un borde */
+  object-fit: cover;
+  /* Para que la imagen no se distorsione si no es cuadrada */
+}
+
+.imagen-circular {
+  border-radius: 50%;
+  /* Esto crea un círculo perfecto si la imagen es cuadrada */
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+body {
+  background-color: #a8dd7c;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /*height: auto;
+  width: 100vw;*/
+  line-height: 1.5;
+  /*lcolor: #032638;
+  font-family: "SUSE Mono";*/
+}
+
+footer{
+  border-top: 4px solid #09862e;
+  background-color: #b9b0b0;
+  color: #0e0000;
+  padding: 20px;
+  text-align: left;
+  height: auto;
+  /*width: 100vw;*/
+  /*background-color: #06301c;*/
+  background-image: linear-gradient(
+    55deg, rgb(165, 221, 184) 0%, rgb(33, 241, 120) 70%);
+ /*paddding: 50%;*/
+}
+footer div img {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  border-radius: 50px 5px 70px 7px;
+}
+
+#boton-arriba2{
+width: 40px;
+height: 40px;
+border-radius: 100%;
+border: 1px solid rgb(146, 5, 34);
+padding: 5px;
+background-color: #f2f5f7;
+position: fixed;
+bottom: 30px;
+right: 25px;
+}
+
+#boton-arriba2:hover{
+  background-color: #09031f;
+  border-style: none;
+  width: 43px;
+  height: 43px;
+  z-index: 1; 
+}
+
+header a {
+  border: 1px, solid #a30cb1;
+  border-radius: 29486px;
+  color: #f7f4f5;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  transform: rotate(360deg);*/
+  /* transition-property: none 5ms ease-out; */
+  /* transition-property: color, background; */
+}
+
+header a:hover {
+  background-color: #fff;
+  color: #110101;
+} 
