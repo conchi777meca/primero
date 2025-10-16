@@ -4,11 +4,21 @@ h1,h2,h3 {
 }
 
 
-h1 {
-  padding: 3em 5em 3em 5em;
-  margin-left: 2px;
+h1{
+  /* padding: 3em 5em 3em 5em; */
+padding-top: 200px; 
+  margin-left: 20px;
+  /* margin-left: 2px;  */
   color: #011c2b;
-  text-align: center;
+  text-align: left;
+}
+h2{
+  /* padding: 3em 5em 3em 5em; */
+padding-top: 20px; 
+  margin-left: 20px;
+  /* margin-left: 2px;  */
+  color: #011c2b;
+  text-align: left;
 }
 
 a {
@@ -20,10 +30,11 @@ a {
   font-size: 19px;
   font-family: "sans-serif", "arial";
   list-style-type: none;
-   padding-top: 200px; 
-   margin-left: 20px;
+  padding-top: 200px; 
+  margin-left: 20px;
 /* z-index: 1; */
 }
+
 
 #lista2 {
   font-size: 1em;
@@ -35,15 +46,15 @@ a {
 #lista-de-imagenes {
   font-size: 2em;
   font-family: "arial";
-   padding-top: 150px; 
-     margin-left: 20px;
+  padding-top: 150px; 
+  margin-left: 20px;
 }
 
 #lista-de-naturaleza {
   font-size: 2em;
   font-family: "arial";
-   padding-top: 150px; 
-     margin-left: 20px;
+  padding-top: 150px; 
+  margin-left: 20px;
 }
 
 .imagen-redondeada {
@@ -53,7 +64,7 @@ a {
   /* Opcional: ajusta el tamaño de la imagen */
   height: 200px;
   /* Opcional: ajusta el tamaño de la imagen */
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   /* Opcional: añade un borde */
   object-fit: cover;
   /* Para que la imagen no se distorsione si no es cuadrada */
@@ -67,30 +78,55 @@ a {
   object-fit: cover;
 }
 
+main {
+  max-width: 80%;
+  /*min-width:;*/
+  /* margin-left : 15px; */
+  /* padding-top: 100px; */
+}
+
+#texto-especial {
+  background: #74bb17;
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+  font-family: "Barriecito", "oi", "Roboto", serif;
+}
+
+.caja-especial {
+  border-left: 2px solid #061430;
+  border-bottom: 2px solid #eb2727;
+  border-right: 2px solid #061430;
+  border-top: 2px solid #eb2727;
+
+}
+
 body {
   background-color: #a8dd7c;
   margin-left: 20px;
-  padding: 20px;
-  height: 100%;
-  /*height: auto;
-  width: 100vw;*/
+  padding-top:200px;
+  /* height: 300%; */
+  height: auto;
+  width: 100vw;
   line-height: 1.5;
-  /*lcolor: #032638;
-  font-family: "SUSE Mono";*/
+
 }
 
 footer{
   border-top: 4px solid #09862e;
   background-color: #b9b0b0;
   color: #0e0000;
-  padding: 20px;
+  /* padding: 10px;  */
+  margin: 10px;
   text-align: left;
   height: auto;
-  /*width: 100vw;*/
+  /* width: 100vw; */
   /*background-color: #06301c;*/
   background-image: linear-gradient(
     55deg, rgb(165, 221, 184) 0%, rgb(33, 241, 120) 70%);
  /*paddding: 50%;*/
+   max-width: 100%;
+
+
 }
 footer div img {
   display: inline-block;
@@ -119,23 +155,6 @@ right: 25px;
   z-index: 1; 
 }
 
-/* header a {
-  border: 1px, solid #a30cb1;
-  border-radius: 29486px;
-  color: #f7f4f5;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 20px;
-  text-transform: uppercase;
-  transform: rotate(360deg);
-  /* transition-property: none 5ms ease-out; */
-  /* transition-property: color, background; */
-/* } */
-
-/*header a:hover {
-  background-color: #fff;
-  color: #110101;
-}  */
 
 /* **************     header  **************      */
 header {
@@ -184,6 +203,7 @@ header a:hover {
     background-color: #fff;
     color: #110101;
 }
+
 
 /* Defino los estilos que se van a aplicar cuando el ancho de pantalla sea minimo 1000px */
 @media (min-width:1000px) {

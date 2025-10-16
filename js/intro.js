@@ -98,7 +98,66 @@ document.querySelector("#caja-mapa").style.backgroundColor="white";
 let opcion=document.querySelector("#opcion1");
 let opcion1=document.getElementById("opcion2");
 
-documentquerySelector("#tarea-nueva").value.trim(); //quita hecos para evitar errores en contraseñas
+let colorTexto=document.querySelector("#color-texto");
+
+let tareaNueva = documentquerySelector("#tarea-nueva").value.trim(); //quita huecos por delante y por detrás para evitar errores en contraseñas
+
+let btnTareaNueva=document.querySelector("#btn-tarea-nueva");
+
+
+//funcion para agregar tarea
+function agragarTarea() {
+    let tareaNueva=document.querySelector("#tarea-nueva").value.trim();
+    let listaTareas=document.querySelector("ul");
+console.log(tareaNueva);
+console.log(listaTareas.innerHTML);
+    let elemLista=document.createElement("li");
+    console.log(elemLista);
+    listaTareas.appendChild(elemLista);
+    documentquerySelector("#tarea-nueva").value=""; //vaciar el campo de texto
+}
+//crear evento 
+//click, mousedown, mouseup, keypress
+btnTareaNueva.addEventListener("click" , agragarTarea);
+
+//cambiar color texto
+let parrafos=document.querySelector("p");
+
+function cambiarColorTexto() {
+    parrafos.style.color=colorTexto.value;
+}
+
+colorTexto.addEventListener("input",cambiarColorTexto);
+
+let parrafos=document.querySelectorAll("article p");
+
+let elemLista =documentquerySelectorAll(" ul li");
+
+//seleccionar el primer elemento de la lista
+elemLista[0];
+
+let ultimoElemLista=documentquerySelector("ul li:last-child");
+
+
+//bucles for
+// for (inicio; condicion; modoficacion) {lista de instrucciones}
+for (let index = 0; index < elemLista.length; index++) {
+    const element = elemLista[index];
+    
+}
+
+    elemLista[i].style.textTransform="uppercase";
+
+    //string.length //elementos de la cadena
+    //charAt(posicion) //caracter en la posicion
+    //document.addEventListener("DOMContentLoaded", function() {}); //espera a que cargue el DOM para ejecutar el script
+    //trim() quita espacios en blanco al principio y al final de un string
+    //toUpperCase() convierte a mayusculas
+    //toLowerCase() convierte a minusculas
+    //.classList.add("clase") añade una clase
+
+    document.querySelector("h1").classList.add("titulo-seccion");
+    document.querySelector("h1").style.color="blue";
 
 
 
