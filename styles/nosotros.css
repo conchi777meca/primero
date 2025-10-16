@@ -5,6 +5,8 @@ h1,h2,h3 {
 
 
 h1 {
+  padding: 3em 5em 3em 5em;
+  margin-left: 2px;
   color: #011c2b;
   text-align: center;
 }
@@ -19,6 +21,7 @@ a {
   font-family: "sans-serif", "arial";
   list-style-type: none;
    padding-top: 200px; 
+   margin-left: 20px;
 /* z-index: 1; */
 }
 
@@ -26,18 +29,21 @@ a {
   font-size: 1em;
   font-family: "arial";
    padding-top: 200px; 
+   margin-left: 20px;
 }
 
 #lista-de-imagenes {
   font-size: 2em;
   font-family: "arial";
    padding-top: 150px; 
+     margin-left: 20px;
 }
 
 #lista-de-naturaleza {
   font-size: 2em;
   font-family: "arial";
    padding-top: 150px; 
+     margin-left: 20px;
 }
 
 .imagen-redondeada {
@@ -63,8 +69,8 @@ a {
 
 body {
   background-color: #a8dd7c;
-  margin: 0;
-  padding: 0;
+  margin-left: 20px;
+  padding: 20px;
   height: 100%;
   /*height: auto;
   width: 100vw;*/
