@@ -1,79 +1,172 @@
+body {
+  background-color: #a8dd7c;
+  margin: 0;
+  padding: 0;
+  /* width: 100vw; */
+  line-height: 1.5;
+
+}
+
+main {
+  max-width: 80%;
+  margin: 0 auto;
+  /*min-width:;*/
+  /* margin-left : 15px; */
+  /* padding-top: 100px; */
+}
+
+h1 {
+  /* padding: 3em 5em 3em 5em; */
+  padding-top: 100px;
+  margin-left: 20px;
+  /* margin-left: 2px;  */
+  color: #011c2b;
+  text-align: left;
+}
+
+h2 {
+  /* padding: 3em 5em 3em 5em; */
+  padding-top: 20px;
+  margin-left: 20px;
+  /* margin-left: 2px;  */
+  color: #011c2b;
+  text-align: left;
+}
+
+a {
+  color: #a30cb1;
+}
+
 /* posicion, fondo y linea inferior de nav */
 nav {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    background-color: white;
-    border-bottom: 2px solid #4E75FF;
+  position: sticky;
+  top: 0px;
+  /*bottom: 40px;*/
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2.5px solid rgb(26, 61, 177);
+  background-color: #f2f5f7;
+    z-index: 100;
 }
+
+nav ul {
+  display: flex;
+  gap: 50px;
+  /*espacio entre elementos*/
+}
+
+nav img {
+  height: 50px;
+  width: 50px;
+  transition: 0.3s ease;
+}
+
+nav img:hover {
+  transform: rotate(360deg);
+  /*transform: scale(1.2);*/
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a:hover {
+  background-color: #092beb;
+  color: #dfd3d4;
+
+}
+
+nav li a {
+  padding: 8px 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: none 200ms ease-out;
+  color: rgb(26, 61, 177);
+}
+
 
 /* escondo el cuadrado del checkbox */
 #menu {
-    display: none;
+  display: none;
 }
 
 /* redimensiono el icono de hamburguesa */
 nav svg {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 /* escondo el logo y la lista */
 .menu-desplegable {
-    display: none;
+  display: none;
 }
 
 /* cuando el checkbox está marcado, hago el logo y la lista visibles */
 input:checked~.menu-desplegable {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
 /* redimensiono el logo */
 nav a img {
-    width: 30%;
+  width: 30%;
 }
 
 /* quito los estilos predeterminados de la lista */
 ul.menu-desplegable {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 /* añado separacion a los elementos de la lista */
 ul.menu-desplegable li {
-    padding: 0.5em;
+  padding: 0.5em;
 }
 
 /* pongo estilo a los enlaces de la lista */
 ul.menu-desplegable a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #4E75FF;
-    font-size: 1.5em;
-    padding: 0.2em 0.4em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #4E75FF;
+  font-size: 1.5em;
+  padding: 0.2em 0.4em;
 }
 
 /* cambio los estilos de los enlaces cuando el cursor esta sobre ellos */
 ul.menu-desplegable a:hover {
-    background-color: #4E75FF;
-    color: white;
+  background-color: #4E75FF;
+  color: white;
 }
 
 /* Pongo las noticas con imagen float a la izquierda, derecha o ninguno */
-.noticia{
-    max-width: 80vw;
-    margin:auto;
-    line-height: 1.5;
+.noticia {
+  max-width: 80vw;
+  /*margin:20px 20px 20px 20px;*/
+  line-height: 1.5;
+  margin-left: 1em;
+  padding-left: 1em;
+  overflow: hidden;
 }
 
-.noticia__img--left{
-    max-width:  40vw;
-    /* float: left;*/
-    float: right;
-    /* float: none; */
-    margin-right: 1em;
+.noticia__img--left {
+  max-width: 40vw;
+  margin: 40vw;
+  /* float: left;*/
+  float: right;
+  /* float: none; */
+  /* margin-right: 1em; */
+
 }
+
+.noticia__img--right {
+  max-width: 40vw;
+  margin-left: 40vw;
+  float: left;
+  /* margin:0px 20px 0px 20px; */
+}
+
 /* @media only screen and (max-width: 990px) {
   body {
     background-color: lightblue;
@@ -83,94 +176,139 @@ ul.menu-desplegable a:hover {
 
 /*          galeria          */
 
-.galeria{
-    display: flex;
-    flex-wrap: wrap; /*salta linea*/
-    justify-content: space-between;
-    max-width: 80vw;
-    margin: auto;
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  /*salta linea*/
+  justify-content: space-between;
+  max-width: 80vw;
+  margin: auto;
 
 }
-.galeria img{
-    /* calcula el ancho para dos columnas restando el espacio del margen*/
-    width: calc(50% - 1em);
+
+.galeria div img {
+  /* calcula el ancho para dos columnas restando el espacio del margen*/
+  width: calc(50% - 1em);
+  margin: 0.5em  2em 0 0 ;
+  /* filter: rgb(18, 18, 177)(70%); */
+  filter: grayscale(60%);
+  /* añado filtro en sepia*/
+  /*pongo sombra*/
+  background-color: #3498db;
+  border-radius: 10%;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
+}
+
+.galeria img:hover {
+  transform: scale(1.1);
+  /* la imagen se amplia*/
+  filter: none;
+  /* quito el filtro*/
+  transition: all 0.3s ease-in-out;
+  /*modifico como se hace la transicion de las propiedades de normal a hover. /propiedad/tiempo/modo/ */
+}
+
+
+
+footer {
+  border-top: 4px solid #09862e;
+  background-color: #b9b0b0;
+  background-image: linear-gradient(55deg, rgb(165, 221, 184) 0%, rgb(33, 241, 120) 70%);
+  color: #0e0000;
+  padding: 15px;
+}
+
+/* footer div img {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  border-radius: 50px 5px 70px 7px;
+} */
+
+#boton-arriba2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid rgb(146, 5, 34);
+  padding: 5px;
+  background-color: #f2f5f7;
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+}
+
+#boton-arriba2:hover {
+  background-color: #09031f;
+  border-style: none;
+  width: 43px;
+  height: 43px;
+  z-index: 1;
+}
+
+
+@media screen and (min-width:1000px) {
+  .noticia {
+    max-width: 60vw;
+  }
+
+  .noticia p {
+    font-size: 1.5em;
+  }
+
+  .noticia h1 {
+    font-size: 3em;
+  }
+
+  body {
+    background-color: lightblue;
+  }
+
+  .galeria {
+    max-width: 60vw;
+
+  }
+
+  .galeria img {
+    /*calcula el ancho para 3 columnas restando el espacio de margen*/
+    width: calc(33.33% - 1em);
     margin: 0.5em;
-    filter: sepia(70%); /* añado filtro en sepia*/
-    /*pongo sombra*/
-    background-color: #3498db;
-    border-radius: 10%;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
-}
-.galeria img:hover{
-    transform: scale(1.1); /* la imagen se amplia*/
-    filter: none; /* quito el filtro*/
-    transition: all 0.3s ease-in-out; /*modifico como se hace la transicion de las propiedades de normal a hover. /propiedad/tiempo/modo/ */
-}
 
-@media screen and (min-width:1000px){
-    .noticia{
-        max-width: 60vw;
-    }
-  
-    .noticia p{
-        font-size: 1.5em ;
-    }    
-   
-    .noticia h1{
-        font-size: 3em ;
-    }
-    
-     body {
-        background-color: lightblue;
-    }
-
-     .galeria{
-        max-width: 60vw;
-
-    }
-    .galeria img{
-        /*calcula el ancho para 3 columnas restando el espacio de margen*/
-    width: calc(33.33% - 1em); 
-    margin: 0.5em;
-
-}
+  }
 }
 
 /* Defino los estilos que se van a aplicar cuando el ancho de pantalla sea minimo 1000px */
 @media (min-width:1000px) {
 
-    /* escondo el icono hamburguesa y el checkbox */
-    nav input {
-        display: none;
-    }
+  /* escondo el icono hamburguesa y el checkbox */
+  nav input {
+    display: none;
+  }
 
-    nav label {
-        display: none;
-    }
+  nav label {
+    display: none;
+  }
 
-    /* muestro el nav completo */
-    ul.menu-desplegable {
-        display: flex;
-        gap: 50px;
-    }
+  /* muestro el nav completo */
+  ul.menu-desplegable {
+    display: flex;
+    gap: 50px;
+  }
 
-    a.menu-desplegable {
-        display: block;
-    }
+  a.menu-desplegable {
+    display: block;
+  }
 
-    /* redimensiono el logo */
-    a.menu-desplegable img {
-        width: 60px;
-        height: 60px;
-    }
+  /* redimensiono el logo */
+  a.menu-desplegable img {
+    width: 60px;
+    height: 60px;
+  }
 
-    /* añado la colocacion de los elementos del nav en horizontal */
-    nav {
-        padding: 10px 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-
+  /* añado la colocacion de los elementos del nav en horizontal */
+  nav {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

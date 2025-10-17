@@ -1,99 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento</title>
-    <!--<link rel="stylesheet" href="../styles/styles.css">-->
-    <link rel="stylesheet" href="../styles/galeria.css">
-</head>
-<body>
-    <!--  <header id="header">
-    <img src="../image/header.png">
-    <h1><em>Blog con Header</em></h1>
-    <p>
-      <a href="">Botón</a>
-    </p></header> -->
 
-    <nav>
-      <input type="checkbox" name="menu" id="menu">
-      <label for="menu"> 
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-</svg></label>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documento</title>
+  <!--<link rel="stylesheet" href="../styles/styles.css">-->
+  <link rel="stylesheet" href="../styles/galeria.css">
+</head>
+
+<body>
+
+  <!-- Navegador -->
+  <nav>
+    <input type="checkbox" name="menu" id="menu">
+    <label for="menu">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg></label>
 
     <a class="menu-desplegable" href="../index.html"><img src="../image/mundonatural.png" alt="logo de inicio"></a>
-      <ul class="menu-desplegable">
-        <li><a href="">Nosotros</a></li>
-        <li><a href="">Servicios</a></li>
-        <li><a href="">galeria</a></li>
-      </ul>
-    </nav>
+    <ul class="menu-desplegable">
+      <li><a href="">Nosotros</a></li>
+      <li><a href="">Servicios</a></li>
+      <li><a href="">galeria</a></li>
+    </ul>
+  </nav>
 
-    <!-- float 
-     <article class="noticia">
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus odio adipisci ipsum non praesentium aliquid veritatis explicabo accusamus, eos hic provident quidem enim totam? At ut veritatis optio odio ratione.</h1>
-        <img class="noticia__img--left" src="https://content.nationalgeographic.com.es/medio/2025/09/28/2-osos_b7a54f5f_250928180341_1280x854.webp" alt="">
-        <p><strong>Lorem ipsum dolor</strong> sit amet consectetur adipisicing elit. Deserunt quo recusandae facere distinctio. <a href="https://www.nationalgeographic.com.es/fotografia/foto-del-dia/jugando-antes-cena_26268" target="_blank">Possimus</a> magnam voluptas autem tenetur cupiditate commodi laudantium neque pariatur quam aliquam incidunt, fugiat doloribus?<br> Soluta eos voluptatem iste dolorem amet quas, eaque cupiditate iusto delectus, dignissimos ipsum! Laboriosam repellat sint architecto aliquid quisquam provident itaque atque ut obcaecati natus? <strong>Dignissimos sint totam fugit</strong> ipsa voluptatibus eius dolor provident excepturi consequuntur deleniti delectus aut, quia nam unde quam hic asperiores!<br> Eius earum culpa iusto maiores tempore, sunt cum harum facere consequatur eligendi quos, minima officia fuga praesentium iure magni esse! Consectetur facere modi voluptatum, quasi dolores perspiciatis!</p>
+  <main>
+    <!-- <h1>Galería de paseos</h1>
+    <h2>Explora la belleza de la naturaleza a través de nuestra colección de paseos al aire libre.</h2>
+    <p>Descubre paisajes impresionantes, flora y fauna diversa, y momentos inolvidables capturados durante nuestras excursiones. Cada imagen cuenta una historia de aventura y conexión con el entorno natural. ¡Inspírate para tu próxima escapada!</p> -->
 
-    </article>
--->
-    <!-- galeria -->
-    <div class="galeria">
+    <!-- Galeria -->
+    <!-- <div class="galeria">
 <img src="../image/jonatan-pie-9P_VNWgeOxo-unsplash.jpg" alt="imagen1"/>
 <img src="../image/keegan-houser--Q_t4SCN8c4-unsplash.jpg" alt="imagen2"/>
 <img src="../image/keegan-houser--Q_t4SCN8c4-unsplash.jpg" alt="imagen3"/>
 <img src="../image/jonatan-pie-9P_VNWgeOxo-unsplash.jpg" alt="imagen4"/>
 <img src="../image/jonatan-pie-9P_VNWgeOxo-unsplash.jpg" alt="imagen5"/>
 <img src="../image/keegan-houser--Q_t4SCN8c4-unsplash.jpg" alt="imagen6"/>
+    </div> -->
+
+    <h1 id="galeria">Galería de paseos</h1>
+    <h2>Explora la belleza de la naturaleza a través de nuestra colección de paseos al aire libre.</h2>
+    <p>Descubre paisajes impresionantes, flora y fauna diversa, y momentos inolvidables capturados durante nuestras
+      excursiones. Cada imagen cuenta una historia de aventura y conexión con el entorno natural. ¡Inspírate para tu
+      próxima escapada!</p>
+
+    <!-- Galeria -->
+    <div class="galeria">
+      <div>
+        <h2>1. Parque Natural La Pedriza</h2>
+        <img class="noticia__img--right" src="../image/Rio-manzanares-la-pedriza.jpg" alt="imagen1" />
+        <p>El Parque Regional la Pedriza es una de las <strong>zonas más populares de la sierra de Guadarrama</strong> y
+          uno de los parques naturales cerca de Madrid preferidos por los escaladores y senderistas. Vienen atraídos a
+          este berrocal los fines de semana por sus paredes, riscos y canchales que conforman un paisaje único en la
+          orografía madrileña.</p>
+        <p>Aunque existen muchas rutas de diferentes dificultades, es importante informarse antes de lanzarse al camino,
+          especialmente en las estaciones del año más frías. En verano es un buen momento para refrescarse con el agua
+          del <strong>río Manzanares</strong> , que recorre uno de los enclaves más típicos de la naturaleza cerca de
+          Madrid.</p>
+
+      </div>
+      <div>
+        <h2>2. Embalse de El Atazar</h2>
+        <img class="noticia__img--left" src="../image/El-Atazar.jpg" alt="imagen2" />
+        <p>En la sierra Norte se encuentra este embalse a una hora de Madrid, también es conocido por su enorme tamaño
+          como <strong>El mar de Madrid</strong>. Forma parte del Canal de Isabel II y está rodeado por la denominada
+          Mancomunidad del Embalse de Altazar, en la que se encuentran pueblos tan distinguidos como El Berrueco.</p>
+        <p>Hay diversas rutas de senderismo dependiendo de la dificultad y duración que queramos, aunque hay algunos
+          puntos históricos a tener en cuenta, como la <strong>Atalaya Árabe</strong> y el <strong>puente
+            romano</strong>. Sin duda, una parada obligatoria si buscas lugares naturales con encanto cerca de Madrid.
+        </p>
+      </div>
+      <div>
+        <h2>3. Lagunas de Peñalara</h2>
+        <img class="noticia__img--right" src="../image/Lagunas-Peñalara.jpg" alt="imagen3" />
+        <p>El Parque Natural de Peñalara es otro de los sitios para visitar en Madrid en la naturaleza: alberga el pico
+          más alto de la Sierra de Guadarrama y una <strong>serie de lagunas de origen glaciar</strong>. Hay rutas
+          senderistas para todos los niveles, pero para poder disfrutar de las lagunas no tendrás que pasar por tramos
+          complicados.</p>
+        <p>De entre las pequeñas lagunas destacan dos: <strong>la Laguna Grande de Peñalara</strong> y la <strong>Laguna
+            de los Pájaros</strong>. La primera, arriba en la foto, es la más visitada y la que tiene la ruta más
+          accesible de unos 6 kilómetros de ida y vuelta.</p>
+      </div>
+      <div>
+        <h2>4. Puerto de Canencia</h2>
+        <img class="noticia__img--left" src="../image/Puerto-Canencia.jpg" alt="imagen4" />
+        <p>A una hora y cuarto de la capital encontramos este tesoro de la naturaleza madrileña, un <strong>abedular con
+            arroyo incluido</strong>. El Puerto de Canencia está repleto de cascadas y de rutas senderistas, pero la más
+          conocida es la <strong>Chorrera de Mojonvalle</strong>. </p>
+        <p>La zona está también repleta de <strong>pinos y robles de hoja caduca</strong> que ayudan a crear ese paraje
+          tan otoñal. Además de las rutas, es una buena oportunidad para visitar el municipio que da nombre al puerto y
+          hacer algo de turismo local dentro de Madrid.</p>
+      </div>
+      <div>
+        <h2>5. Las Cárcavas</h2>
+        <img class="noticia__img--right" src="../image/Carcavas-madrid.jpg" alt="imagen5" />
+        <p>La ruta para llegar a Las Cárcavas comienza en la <strong>presa de Pontón de la Oliva</strong>, justo en la
+          frontera entre la Comunidad de Madrid y Guadalajara. Este paisaje protegido —parecido al que podemos encontrar
+          en las <strong>Barrancas de Burujón</strong> — se forma por la <strong>erosión remontante del agua en las
+            tierras</strong> con poca sujeción vegetal.</p>
+        <p>Para llegar hasta ellas hay <strong> dos caminos</strong>: uno corta, de unas dos horas, con una gran cuesta
+          inicial, pero más directa a las Cárcavas, y otro más largo y circular, pensada para pasar el día.</p>
+      </div>
+      <div>
+        <H2>6. El bosque finlandés</H2>
+        <img class="noticia__img--left" src="../image/Bosque-Finlandes-Rascafria.jpg" alt="imagen6" />
+        <p>En Rascafría, uno de los pueblos más fríos de Madrid, hay un paraje de <strong>abedules, chopos y abetos que
+            se ha apodado como el bosque finlandés</strong>.</p>
+        <p>Tiene un pequeño estanque que ayuda a crear este paisaje de apariencia escandinava, con embarcadero y cabaña
+          de madera incluida, que está justo en frente del
+          <strong>Real Monasterio de Santa María de El Paular</strong>. El paseo siguiendo el río Lozoya es sencillo y
+          tiene un encanto especial en cada época del año gracias a los árboles de hoja caduca que lo rodean.
+        </p>
+      </div>
     </div>
 
+
+  </main>
+  <!-- Pie de página -->
+  <footer>
+    <a href="#galeria" id="boton-arriba2">
+      <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18" />
+      </svg>
+    </a>
+    <p>Derechos reservados © 2025</p>
+  </footer>
+
+
 </body>
-<!--<main>
-    <section id="Nosotros">
-      <p>N Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
-        eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
-        fugiat id mollitia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
-        eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
-        fugiat id mollitia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
-        eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
-        fugiat id mollitia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
-        eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
-        fugiat id mollitia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
-        eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
-        fugiat id mollitia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
-        eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
-        fugiat id mollitia!</p>
-    </section>
-    <section id="Servicios">
-      <p>S Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
-        eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
-        fugiat id mollitia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
-        eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
-        fugiat id mollitia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
-        eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
-        fugiat id mollitia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
-        eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
-        fugiat id mollitia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
-        eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
-        fugiat id mollitia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
-        eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
-        fugiat id mollitia!</p>
-    </section>
-    <section id="Contacto">
-      <p>C Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
-        eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
-        fugiat id mollitia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
-        eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
-        fugiat id mollitia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
-        eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
-        fugiat id mollitia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
-        eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
-        fugiat id mollitia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
-        eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
-        fugiat id mollitia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod repellendus voluptatibus rerum magnam
-        eligendi officiis possimus autem dignissimos at culpa, nobis aspernatur velit laboriosam debitis, voluptas
-        fugiat id mollitia!</p>
-    </section>
-</main>-->
+
 </html>
