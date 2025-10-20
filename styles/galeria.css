@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
   background-color: #a8dd7c;
   margin: 0;
@@ -6,8 +8,9 @@ body {
   line-height: 1.5;
 
 }
-
 main {
+
+  font-family: 'Rubik', sans-serif;
   max-width: 80%;
   margin: 0 auto;
   /*min-width:;*/
@@ -16,21 +19,27 @@ main {
 }
 
 h1 {
+  font-family: 'Rubik', sans-serif;
   /* padding: 3em 5em 3em 5em; */
-  padding-top: 100px;
-  margin-left: 20px;
+  padding-top: 10px;
+  /* margin-left: 20px; */
   /* margin-left: 2px;  */
   color: #011c2b;
-  text-align: left;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: antiquewhite;
 }
 
 h2 {
+  font-family: 'Rubik', sans-serif;
   /* padding: 3em 5em 3em 5em; */
   padding-top: 20px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   /* margin-left: 2px;  */
   color: #011c2b;
   text-align: left;
+  text-transform: uppercase;
+  background-color: antiquewhite;
 }
 
 a {
@@ -110,9 +119,9 @@ input:checked~.menu-desplegable {
 }
 
 /* redimensiono el logo */
-nav a img {
+/* nav a img {
   width: 30%;
-}
+} */
 
 /* quito los estilos predeterminados de la lista */
 ul.menu-desplegable {
@@ -143,87 +152,53 @@ ul.menu-desplegable a:hover {
 /* Pongo las noticas con imagen float a la izquierda, derecha o ninguno */
 .noticia {
   max-width: 80vw;
-  /*margin:20px 20px 20px 20px;*/
-  line-height: 1.5;
-  margin-left: 1em;
-  padding-left: 1em;
-  overflow: hidden;
-}
+    margin:auto;
+    line-height: 1.5;}
 
 .noticia__img--left {
   max-width: 40vw;
-  margin: 40vw;
-  /* float: left;*/
-  float: right;
+  /* margin: 40vw; */
+   float: right;
   /* float: none; */
-  /* margin-right: 1em; */
-
+  margin-left: 1em;
+/* box-shadow: 0px 10px 10px  rgba(0, 0, 0, 1); */
+  /* margin:0px 20px 0px 20px; */
+  border-radius: 10%;
 }
 
 .noticia__img--right {
   max-width: 40vw;
-  margin-left: 40vw;
+  /* margin-left: 40vw; */
   float: left;
+   margin-right: 1em;
+/* box-shadow: 0px 10px 10px  rgba(0, 0, 0, 1); */
   /* margin:0px 20px 0px 20px; */
+  /* border-radius: 10%; */
 }
 
-/* @media only screen and (max-width: 990px) {
-  body {
-    background-color: lightblue;
-  }
-}*/
-
-
-/*          galeria          */
-
-.galeria {
-  display: flex;
-  flex-wrap: wrap;
-  /*salta linea*/
-  justify-content: space-between;
-  max-width: 80vw;
-  margin: auto;
-
-}
-
-.galeria div img {
-  /* calcula el ancho para dos columnas restando el espacio del margen*/
-  width: calc(50% - 1em);
-  margin: 0.5em  2em 0 0 ;
-  /* filter: rgb(18, 18, 177)(70%); */
-  filter: grayscale(60%);
-  /* añado filtro en sepia*/
-  /*pongo sombra*/
-  background-color: #3498db;
-  border-radius: 10%;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
-}
-
-.galeria img:hover {
-  transform: scale(1.1);
-  /* la imagen se amplia*/
-  filter: none;
-  /* quito el filtro*/
-  transition: all 0.3s ease-in-out;
-  /*modifico como se hace la transicion de las propiedades de normal a hover. /propiedad/tiempo/modo/ */
-}
-
-
-
-footer {
+footer{
   border-top: 4px solid #09862e;
   background-color: #b9b0b0;
-  background-image: linear-gradient(55deg, rgb(165, 221, 184) 0%, rgb(33, 241, 120) 70%);
   color: #0e0000;
-  padding: 15px;
-}
+  padding: 20px; 
+  /* margin-top: 10px; */
+  text-align: left;
+  height: auto;
+  /* width: 100vw; */
+  /*background-color: #06301c;*/
+  background-image: linear-gradient(
+    55deg, rgb(165, 221, 184) 0%, rgb(33, 241, 120) 70%);
+ /*paddding: 50%;*/
+   /* max-width: 100%; */
 
-/* footer div img {
+
+}
+footer div img {
   display: inline-block;
   vertical-align: top;
   width: 200px;
   border-radius: 50px 5px 70px 7px;
-} */
+}
 
 #boton-arriba2 {
   width: 40px;
@@ -246,6 +221,48 @@ footer {
 }
 
 
+/* @media only screen and (max-width: 990px) {
+  body {
+    background-color: lightblue;
+  }
+}*/
+
+
+         /* galeria          */
+
+/* .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  /*salta linea*/
+  /* justify-content: space-between;
+  max-width: 80vw;
+  margin: auto; */
+
+/* } */ 
+
+/* .galeria div img { */
+  /* calcula el ancho para dos columnas restando el espacio del margen*/
+  /* width: calc(50% - 1em);
+  margin: 0.5em  2em 0.5em 0 ;
+  /* filter: rgb(18, 18, 177)(70%); */
+  /*filter: grayscale(60%); */
+  /* añado filtro en sepia*/
+  /*pongo sombra*/
+  /* background-color: #3498db;
+  border-radius: 10%;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 1); Desplazamiento horizontal, vertical y Radio de desenfoque */
+/* } */
+
+/* .galeria img:hover {
+  transform: scale(1.1); */
+  /* la imagen se amplia*/
+  /* filter: none; */
+  /* quito el filtro*/
+  /* transition: all 0.3s ease-in-out; */
+  /*modifico como se hace la transicion de las propiedades de normal a hover. /propiedad/tiempo/modo/ */
+/* } */
+
+/* Defino los estilos que se van a aplicar cuando el ancho de pantalla sea minimo 1000px */
 @media screen and (min-width:1000px) {
   .noticia {
     max-width: 60vw;

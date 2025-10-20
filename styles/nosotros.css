@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 h1,h2,h3 {
   /*font-family: "Bungee Static", "Archivo BlackStatic", "SUSE", "roboto", "oi" 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, "Barriecito";*/
-  font-family: "SUSE","Roboto", "Bungee Static", "oi";
+  font-family: "Roboto", "SUSE","Bungee Static", "oi";
 }
 
 
 h1{
   /* padding: 3em 5em 3em 5em; */
-padding-top: 200px; 
+padding-top: 100px; 
   margin-left: 20px;
   /* margin-left: 2px;  */
   color: #011c2b;
   text-align: left;
+  font-family: 'Roboto', sans-serif;
 }
 h2{
   /* padding: 3em 5em 3em 5em; */

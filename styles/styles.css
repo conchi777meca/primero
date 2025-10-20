@@ -1,10 +1,10 @@
 /*Cambio de fondo*/
 
-/* @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bitcount+Prop+Double+Ink:wght@100..900&family=Oi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bitcount+Prop+Double+Ink:wght@100..900&family=Oi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=SUSE:ital,wght@0,100..900;1,100..900&display=swap');
- */
+
 
 /*Cambio de fondo*/
 
@@ -23,21 +23,28 @@ body {
 
 h1,h2,h3 {
   /*font-family: "Bungee Static", "Archivo BlackStatic", "SUSE", "roboto", "oi" 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, "Barriecito";*/
-  font-family: "SUSE","Roboto", "Bungee Static", "oi";
+  font-family: "Roboto","SUSE", "Bungee Static", "oi";
 }
 
 
 h1,
 h2,
-h3,
+h3
 strong {
   color: #011c2b;
+  text-transform: uppercase;
+   font-family: "Roboto", sans-serif;
 }
 
 a {
   color: #a30cb1;
 }
 
+p {
+  line-height: 1.5;
+  font-family: "Roboto","SUSE", "Bungee Static", "oi";
+
+}
 /* Pongo las noticas con imagen float a la izquierda, derecha o ninguno */
 .noticia{
     max-width: 80vw;
@@ -46,6 +53,7 @@ a {
     /* margin-left: 1em;
     padding-left: 1em; */
     overflow: hidden;
+    font-family: "Roboto","SUSE", "Bungee Static", "oi";
 }
 
 .noticia__img--left{
@@ -59,7 +67,7 @@ a {
 .noticia__img--right{
     max-width:  40vw;
     float: left;
-    margin:0px 20px 0px 20px;
+    margin:0px 20px 0px 0px;
 }
 
 footer{
@@ -415,8 +423,67 @@ ul.menu-desplegable a:hover {
     transition: all 0.3s ease-in-out; /*modifico como se hace la transicion de las propiedades de normal a hover. /propiedad/tiempo/modo/ */
 }
 
+/* PANELES*/
 
+#paneles-content {
+    width: 50vw;
+    height: 100%;
+    margin: 10px auto;
+    border: 2px solid cornflowerblue;
+    padding: 20px;
+    background-color: #f7f4f5;
+}
+/* escondemos los input radio*/
+.panel-input {
+    display: none;
+}
 
+/*input[name=panel]{     damos tipos de elementos, otra forma de refernciarlos
+input[type="radio"]{
+}*/
+
+h2 {
+  font-family: "SUSE","Roboto", "Bungee Static", "oi";
+  text-align: center;
+}
+/* estilo del label del panel*/
+
+.panel label {
+    display: block;
+    border: 1px solid coral;
+    height: 1.8em;
+    padding: 5px 0 0 15px;
+    font-weight: 600;
+    width: calc(100% - 15px);
+}
+
+/*pading lateral*/
+
+.panel p {
+    padding: 0 15px;
+}
+
+.panel {
+    margin-bottom: 0px;
+}
+
+/*estilos plegado*/
+.contenido {
+    width: 100%;
+    /*border: 1px solid rgb(85, 22, 35);*/
+    border: 1px solid transparent;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+/*estilos desplegado*/
+.panel-input:checked~div.contenido {
+    height: auto;/*cambio el alto*/
+    border-color: coral;
+    border-top: none;
+    margin-bottom: 4px;
+}
 /* Defino los estilos que se van a aplicar cuando el ancho de pantalla sea minimo 1000px */
 @media (min-width:1000px) {
 
