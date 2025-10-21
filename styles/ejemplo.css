@@ -1,0 +1,57 @@
+/* 1. Con Flexbox
+Flexbox es un método moderno y potente para el diseño de interfaces, especialmente útil para menús. HTML.  */
+
+nav ul {
+      display: flex; /* Coloca los elementos de la lista en una fila */
+      list-style: none; /* Elimina los puntos de la lista */
+      padding: 0;
+    }
+
+    nav li {
+      margin-right: 10px; /* Añade espacio entre elementos */
+    }
+
+    /* Para hacer que los elementos ocupen el ancho uniformemente */
+    nav ul {
+      display: flex;
+      width: 100%;
+    }
+    nav li {
+      flex-grow: 1; /* Permite que los elementos crezcan */
+      text-align: center;
+    }
+
+
+/* 2. Con display: inline-block
+Este método es más sencillo para elementos simples como una lista de enlaces o iconos. HTML */
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block; /* Muestra los elementos uno al lado del otro */
+      margin-right: 15px; /* Añade espacio */
+      background-color: lightblue;
+      padding: 10px;
+    }
+
+
+
+/* 3. Con float: left
+Este método funciona bien para agrupar elementos en una fila, especialmente con divs, y puede ser útil para que el contenido se ajuste automáticamente al ancho de la pantalla. HTML. CSS */
+
+     .item {
+      float: left; /* Los elementos se alinean horizontalmente */
+      width: 33%; /* Cada uno ocupa un tercio del espacio */
+      box-sizing: border-box;
+      padding: 10px;
+      background-color: lightgreen;
+    }
+
+    .container::after { /* Limpia el float para que el contenedor no se colapse */
+      content: "";
+      display: table;
+      clear: both;
+    }
