@@ -22,6 +22,7 @@ h1 {
   font-family: 'Rubik', sans-serif;
   /* padding: 3em 5em 3em 5em; */
   padding-top: 10px;
+
   /* margin-left: 20px; */
   /* margin-left: 2px;  */
   color: #011c2b;
@@ -30,10 +31,15 @@ h1 {
   background-color: antiquewhite;
 }
 
+#hueco{
+  height: 100px;
+}
+
 h2 {
   font-family: 'Rubik', sans-serif;
   /* padding: 3em 5em 3em 5em; */
   padding-top: 20px;
+
   /* margin-left: 20px; */
   /* margin-left: 2px;  */
   color: #011c2b;
@@ -58,6 +64,7 @@ nav {
   border-bottom: 2.5px solid rgb(26, 61, 177);
   background-color: #f2f5f7;
     z-index: 100;
+    font-family: 'Rubik', sans-serif;
 }
 
 nav ul {
@@ -153,24 +160,31 @@ ul.menu-desplegable a:hover {
 .noticia {
   max-width: 80vw;
     margin:auto;
-    line-height: 1.5;}
+    line-height: 1.5;
+     margin-top: 300;
+
+    }
+
 
 .noticia__img--left {
   max-width: 40vw;
   /* margin: 40vw; */
    float: right;
   /* float: none; */
-  margin-left: 1em;
+  /* margin-left: 1em; */
+  margin: 10px 0px 10px 20px;
 /* box-shadow: 0px 10px 10px  rgba(0, 0, 0, 1); */
   /* margin:0px 20px 0px 20px; */
-  border-radius: 10%;
+  /* border-radius: 10%; */
+
 }
 
 .noticia__img--right {
   max-width: 40vw;
   /* margin-left: 40vw; */
   float: left;
-   margin-right: 1em;
+   /* margin-right: 1em; */
+     margin: 10px 20px 10px 0px;
 /* box-shadow: 0px 10px 10px  rgba(0, 0, 0, 1); */
   /* margin:0px 20px 0px 20px; */
   /* border-radius: 10%; */

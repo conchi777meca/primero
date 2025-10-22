@@ -54,6 +54,7 @@ p {
     padding-left: 1em; */
     overflow: hidden;
     font-family: "Roboto","SUSE", "Bungee Static", "oi";
+  
 }
 
 .noticia__img--left{
@@ -67,7 +68,7 @@ p {
 .noticia__img--right{
     max-width:  40vw;
     float: left;
-    margin:0px 20px 0px 0px;
+    margin:20px 20px 20px 0px;
 }
 
 footer{
@@ -131,6 +132,71 @@ right: 25px;
   text-align: center;
 }
 
+/* checkedlist*/
+#tabs {
+    font-family: "Roboto","SUSE", "Bungee Static", "oi";
+    font-size: 16px;
+}
+
+#tabs li {
+    list-style: none;
+    float: left;
+    width: 150px;
+    height: 120px;
+    margin: 0 5px;
+}
+
+#tabs li a {
+    background-color: #dedede;
+    color: #222;
+    font-weight: bold;
+    text-decoration: none;
+    width: 150px;
+    height: 120px;
+    display: block;
+    float: left;
+    line-height: 35px;
+    text-align: center;
+}
+
+#tabs li a:hover, 
+#tabs li a:active {
+    background-color: #ededed;
+}
+
+div.content {
+    color: #222;
+    font-family: Verdana;
+    font-size: 12px;
+    background-color: #efefef;
+    padding: 25px;
+    width: 600px;
+    height: 350px;
+    line-height: 22px;
+}
+
+#container {
+    /* clear: left;
+    clear: right;
+    clear: none;  */
+    clear: both;
+    /*para indicar que no se permiten elementos flotantes a su izqu
+    ierda, derecha o ambos lados*/
+    height: 400px; /* 350px + 25px (padding sx) + 25px (padding dx) */
+    overflow: hidden;
+     /*   overflow:scroll; */
+}
+
+/* .content .tab1:after{
+    left: 122px;
+}
+.content .tab2:after{
+    left: 210px;
+} */
+.content .tab3:after{
+    left: 303px;
+    border-top: 0px;
+}
 header {
   background-color: #8bb499;
   height: 100%;
@@ -188,6 +254,7 @@ nav {
   align-items: center;
   border-bottom: 2.5px solid rgb(26, 61, 177);
   background-color: #f2f5f7;
+  font-family: "Roboto","SUSE", "Bungee Static", "oi";
 }
 
 nav ul {
@@ -408,6 +475,7 @@ ul.menu-desplegable a:hover {
  /* grid-template: repeat(3, 1fr) / repeat(3, 1fr); */
  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: auto;
+    margin-bottom: 30px;
    
 }
 
@@ -443,7 +511,7 @@ z-index: -10;
     width: 50vw;
     height: 100%;
     margin: 10px auto;
-    border: 2px solid cornflowerblue;
+    border: 2px solid rgb(16, 170, 49);
     padding: 20px;
     background-color: #f7f4f5;
 }
@@ -463,10 +531,11 @@ h2 {
 .panel label {
     display: block;
     border: 1px solid coral;
-    height: 1.8em;
-    padding: 5px 0 0 15px;
+    /* height: 1.8em; */
+    padding: 5px 15px;
     font-weight: 600;
-    width: calc(100% - 15px);
+    width: calc(100% - 30px);
+    font-family: "Roboto","SUSE", "Bungee Static", "oi";
 }
 
 /*pading lateral*/
@@ -495,6 +564,7 @@ h2 {
     border-color: coral;
     border-top: none;
     margin-bottom: 4px;
+    /* margin-right: 1px; */
 }
 /* Defino los estilos que se van a aplicar cuando el ancho de pantalla sea minimo 1000px */
 @media (min-width:1000px) {

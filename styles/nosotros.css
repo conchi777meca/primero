@@ -110,7 +110,7 @@ body {
   height: auto;
   width: 100vw;
   line-height: 1.5;
-
+ font-family: "Roboto", "SUSE","Bungee Static", "oi";
 }
 
 footer{
@@ -241,5 +241,6 @@ header a:hover {
         display: flex;
         justify-content: space-between;
         align-items: center;
+         font-family: "Roboto", "SUSE","Bungee Static", "oi";
     }
 }

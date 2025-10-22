@@ -72,10 +72,11 @@
 
 //prompt("", "");
 
-
-// Ejercicio 1
+/////////////////
+// Ejercicio 1 //
+/////////////////
 // Convierte estos if en un switch
-// let a = +prompt('Elige un número del 0 al 3', '');
+// let a = +prompt('Elige un número del 0 al 3', ''); // + lo toma como número 
 
 // if (a == 0) {
 //   alert( "Has elegido cero");
@@ -102,13 +103,13 @@
 //   case 2||3:
 //       alert("Elegiste un dos o un tres");
 //     break;
-   
 //   default: alert("Elegiste un número fuera de rango");
 //  }
 
 
-
-// Ejercicio 2
+/////////////////
+// Ejercicio 2 //
+/////////////////
 // Convierte este switch en un if
 // let estacion = "otoño";
 // let mensajeEstacion;
@@ -140,15 +141,30 @@
 // }
 // document.getElementById("caja-mensaje-estacion").innerText = mensajeEstacion;
 
-//ejercicio 3
+////////////////
+//ejercicio 3 //
+////////////////
 // Utiliza un operador ternario para asignar un valor a una variable en función de una condición
-//Pedir edad y dar un mensaje si es menor de edad y otro si es mayor
+//Pedir edad y dar un mensaje si es menor de edad y otro si es mayor con bienvenida
 
 let edad = +prompt("¿Cuál es tu edad?", "");
  alert("edad ="+edad);
 let tipoUsuario;
 edad < 18  ? tipoUsuario="Eres menor de edad" : tipoUsuario="Eres mayor de edad, enhorabuena!" 
 // alert("tipoUsuario =" +tipoUsuario);
-document.getElementById("edad").innerText = tipoUsuario;
+document.getElementById("edad").innerText = tipoUsuario; //necesiata una var en html
 
+//otra manera
 // edad < 18  ? alert("Eres menor de edad") : alert("Eres mayor de edad, enhorabuena!");
+//otra
+//let mayoredad=
+
+
+////////////////
+//ejercicio 4 //
+////////////////
+// comprobar si una contraseña es correcta
+let contasenia
+if(contrasenia != ""){
+
+}
