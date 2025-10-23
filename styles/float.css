@@ -1,10 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+  background-color: #a8dd7c;
+  margin: 0;
+  padding: 0;
+  /* width: 100vw; */
+  line-height: 1.5;
+
+}
+main {
+
+  font-family: 'Rubik', sans-serif;
+  max-width: 80%;
+  margin: 0 auto;
+  /*min-width:;*/
+  /* margin-left : 15px; */
+  /* padding-top: 100px; */
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  /* padding: 3em 5em 3em 5em; */
+  padding-top: 10px;
+
+  /* margin-left: 20px; */
+  /* margin-left: 2px;  */
+  color: #011c2b;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: antiquewhite;
+}
+
+#hueco{
+  height: 100px;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  /* padding: 3em 5em 3em 5em; */
+  padding-top: 20px;
+
+  /* margin-left: 20px; */
+  /* margin-left: 2px;  */
+  color: #011c2b;
+  text-align: left;
+  text-transform: uppercase;
+  background-color: antiquewhite;
+}
+
+a {
+  color: #a30cb1;
+}
+
+p {
+  line-height: 1.5;
+  font-family: "Roboto","SUSE", "Bungee Static", "oi";
+
+}
+
 /* posicion, fondo y linea inferior de nav */
 nav {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    border-bottom: 2px solid #4E75FF;
+  position: sticky;
+  top: 0px;
+  /*bottom: 40px;*/
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2.5px solid rgb(26, 61, 177);
+  background-color: #f2f5f7;
+    z-index: 100;
+    font-family: 'Rubik', sans-serif;
 }
+
+nav ul {
+  display: flex;
+  gap: 50px;
+  /*espacio entre elementos*/
+}
+
+nav img {
+  height: 50px;
+  width: 50px;
+  transition: 0.3s ease;
+}
+
+nav img:hover {
+  transform: rotate(360deg);
+  /*transform: scale(1.2);*/
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a:hover {
+  background-color: #092beb;
+  color: #dfd3d4;
+
+}
+
+nav li a {
+  padding: 8px 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: none 200ms ease-out;
+  color: rgb(26, 61, 177);
+}
+
 
 /* escondo el cuadrado del checkbox */
 #menu {
@@ -29,9 +133,9 @@ input:checked~.menu-desplegable {
 }
 
 /* redimensiono el logo */
-nav a img {
+/* nav a img {
     width: 30%;
-}
+} */
 
 /* quito los estilos predeterminados de la lista */
 ul.menu-desplegable {
@@ -66,18 +170,97 @@ ul.menu-desplegable a:hover {
     line-height: 1.5;
 }
 
-.noticia__img--left{
-    max-width:  40vw;
-    /* float: left;*/
-    float: right;
-    /* float: none; */
-    margin-right: 1em;
+.noticia__img--none {
+ display: block;
+  max-width: 40vw;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.noticia__img--left {
+  max-width: 40vw;
+  /* margin: 40vw; */
+   float: right;
+  /* float: none; */
+  /* margin-left: 1em; */
+  margin: 10px 0px 10px 20px;
+/* box-shadow: 0px 10px 10px  rgba(0, 0, 0, 1); */
+  /* margin:0px 20px 0px 20px; */
+  /* border-radius: 10%; */
+
 }
 /* @media only screen and (max-width: 990px) {
   body {
     background-color: lightblue;
   }
 }*/
+
+footer{
+  border-top: 4px solid #09862e;
+  background-color: #b9b0b0;
+  color: #0e0000;
+  padding: 20px; 
+  /* margin-top: 10px; */
+  text-align: left;
+  height: auto;
+  /* width: 100vw; */
+  /*background-color: #06301c;*/
+  background-image: linear-gradient(
+    55deg, rgb(165, 221, 184) 0%, rgb(33, 241, 120) 70%);
+ /*paddding: 50%;*/
+   /* max-width: 100%; */
+
+
+}
+footer div img {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  border-radius: 50px 5px 70px 7px;
+}
+
+#botones {
+  display: flex;
+  flex-wrap: wrap;
+  /*salta linea*/
+  /* justify-content: space-between;
+  max-width: 80vw;
+  margin: auto; */
+
+}
+
+#indicador {
+  width: 15px;
+  height: 30px;
+  /* border-radius: 100%;
+  border: 1px solid rgb(146, 5, 34);*/
+  /* padding: 5px; */
+  /*background-color: #f2f5f7; */
+  position:relative;
+
+  bottom: 40px;
+  right: 40px;
+}
+
+#boton-arriba2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid rgb(146, 5, 34);
+  padding: 5px;
+  background-color: #f2f5f7;
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+}
+
+#boton-arriba2:hover {
+  background-color: #09031f;
+  border-style: none;
+  width: 43px;
+  height: 43px;
+  z-index: 1;
+}
 
 
 @media screen and (min-width:1000px){

@@ -255,6 +255,7 @@ nav {
   border-bottom: 2.5px solid rgb(26, 61, 177);
   background-color: #f2f5f7;
   font-family: "Roboto","SUSE", "Bungee Static", "oi";
+     z-index: 100;
 }
 
 nav ul {
@@ -514,6 +515,7 @@ z-index: -10;
     border: 2px solid rgb(16, 170, 49);
     padding: 20px;
     background-color: #f7f4f5;
+
 }
 /* escondemos los input radio*/
 .panel-input {
@@ -529,6 +531,7 @@ h2 {
 /* estilo del label del panel*/
 
 .panel label {
+      cursor:pointer;
     display: block;
     border: 1px solid coral;
     /* height: 1.8em; */
