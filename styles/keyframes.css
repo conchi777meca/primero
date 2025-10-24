@@ -1,0 +1,195 @@
+div:has(h2 + p) {
+  display: grid;
+}
+
+
+h2+p {
+  text-transform: uppercase;
+}
+
+main {
+  max-width: 880px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  position: relative;
+  padding-block: 32px;
+}
+
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-basis: 180px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  perspective: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+
+.blurry {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.blurry::before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  transform: translate3d(0px, 0px, -1px);
+  background: red;
+  filter: blur(6px);
+}
+
+
+@keyframes shake {
+  50% {
+    transform: translate3d(20px, 0, 0);
+  }
+}
+
+#shake {
+  animation: shake ease-in 300ms infinite alternate;
+}
+
+
+/* @keyframes */
+/* animation:  */
+
+/* @keyframes cambiocolor {
+  0% {
+    top: 0;
+    background-color: black;
+  }
+
+  10% {
+    background-color: aqua;
+  }
+
+  20% {
+    background-color: blue;
+  }
+
+  100% {
+    top: 300px;
+    background-color: blueviolet;
+  }
+}
+
+#boton-color{
+  background-color: aliceblue;
+  animation: cambiocolor ease-in 3s infinite;
+} */
+
+
+@keyframes flip {
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+#flip {
+  animation: flip ease-in 600ms infinite alternate;
+}
+
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+#pulse {
+  animation: pulse ease-in 1400ms infinite alternate;
+}
+
+
+@keyframes glitch {
+  50% {
+    transform: skew(180deg);
+  }
+}
+
+#glitch {
+  animation: glitch ease-in 600ms infinite;
+}
+
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
+
+#sheen::after {
+  animation: sheen ease-in 1s infinite;
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: rgb(189, 221, 225);
+  transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+
+@keyframes glow {
+  50% {
+    box-shadow: 0 0 40px hsl(90, 100%, 60%);
+  }
+}
+
+#glow {
+  animation: glow ease-in 600ms infinite alternate;
+}
+
+@keyframes twirl {
+
+  50%,
+  100% {
+    transform: rotate(900deg);
+  }
+}
+
+#twirl {
+  animation: twirl ease-in 600ms infinite;
+}
+
+
+
+@keyframes blur {
+  50% {
+    filter: blur(20px);
+    transform: skew(45deg);
+  }
+}
+
+#blur {
+  animation: blur ease-in 1s infinite alternate;
+}

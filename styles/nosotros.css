@@ -87,21 +87,6 @@ main {
   /* padding-top: 100px; */
 }
 
-#texto-especial {
-  background: #74bb17;
-  padding: 2px 4px;
-  vertical-align: text-bottom;
-  font-family: "Barriecito", "oi", "Roboto", serif;
-}
-
-.caja-especial {
-  border-left: 2px solid #061430;
-  border-bottom: 2px solid #eb2727;
-  border-right: 2px solid #061430;
-  border-top: 2px solid #eb2727;
-
-}
-
 body {
   background-color: #a8dd7c;
   margin-left: 20px;
@@ -112,6 +97,21 @@ body {
   line-height: 1.5;
  font-family: "Roboto", "SUSE","Bungee Static", "oi";
 }
+
+#texto-especial {
+  background: #74bb17;
+  padding: 4px 8px;
+  vertical-align: text-bottom;
+ }
+
+.caja-especial {
+  border-left: 2px solid #061430;
+  border-bottom: 2px solid #eb2727;
+  border-right: 2px solid #061430;
+  border-top: 2px solid #eb2727;
+}
+
+
 
 footer{
   border-top: 4px solid #09862e;
@@ -206,7 +206,29 @@ header a:hover {
     color: #110101;
 }
 
+/*          galeria          */
 
+#grid {
+ display: grid;
+  height: auto;
+ /* grid-template: repeat(3, 1fr) / repeat(3, 1fr); */
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: auto;
+    margin-bottom: 30px;
+   
+}
+
+#grid > div {
+  background-color: rgb(192, 233, 192);
+  text-align: center;
+  padding: 20px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 1);
+}
+#grid > :hover{
+    transform: scale(1.1); /* la imagen se amplia*/
+    filter: none; /* quito el filtro*/
+    transition: all 0.3s ease-in-out; /*modifico como se hace la transicion de las propiedades de normal a hover. /propiedad/tiempo/modo/ */
+}
 /* Defino los estilos que se van a aplicar cuando el ancho de pantalla sea minimo 1000px */
 @media (min-width:1000px) {
 

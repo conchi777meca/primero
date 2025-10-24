@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* FONDO MOVIMIENTO HORIZONTAL */
+.container {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    /* top: calc(100vh/4); */
+    /* bottom: 0; */
+    z-index: -2;
+}
+
+.sliding-background {
+    background: url("../imagenes/patrón-de-acuarela-horizontal-sin-fisuras.jpg") repeat-x;
+    height: 400px;
+    width: 2400px; /* Tres veces el ancho de la imagen */
+    animation: slide 60s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-800px, 0, 0);
+        /* El ancho de la imagen */
+
+    }
+}
+
+/* CODIGO HTML */
+ /* <div class="container">
+        <div class="sliding-background"></div>
+    </div> */
