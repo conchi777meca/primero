@@ -1,4 +1,4 @@
-/*Cambio de fondo*/
+/* Tipos de letra */
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bitcount+Prop+Double+Ink:wght@100..900&family=Oi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
@@ -6,13 +6,14 @@
 @import url('https://fonts.googleapis.com/css2?family=SUSE:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-/*Cambio de fondo*/
+/* Cambio de fondo */
 
 body {
   background-color: #a8dd7c;
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: "Roboto", sans-serif;
   /*height: auto;
   width: 100vw;*/
   /*line-height: 1.5;
@@ -22,18 +23,35 @@ body {
 
 
 h1,h2,h3 {
-  /*font-family: "Bungee Static", "Archivo BlackStatic", "SUSE", "roboto", "oi" 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, "Barriecito";*/
-  font-family: "Roboto","SUSE", "Bungee Static", "oi";
+  /* font-family: "Roboto","SUSE", "Bungee Static", "oi"; */
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #011c2b;
+  text-transform: uppercase;
+  /* background-color: antiquewhite; */
+
 }
 
+h3 {
+background-color: rgb(187, 231, 191);
+}
 
-h1,
+h2 {
+background-color: antiquewhite;;
+}
+/* h1,
 h2,
 h3
 strong {
   color: #011c2b;
   text-transform: uppercase;
-   font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+} */
+
+h1 em{
+   font-size: 50px;
+   text-align: left;
 }
 
 a {
@@ -42,7 +60,10 @@ a {
 
 p {
   line-height: 1.5;
-  font-family: "Roboto","SUSE", "Bungee Static", "oi";
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto","SUSE", "Bungee Static", "oi"; */
+  padding:2px 3px;
+  margin:auto;
 
 }
 /* Pongo las noticias con imagen float a la izquierda, derecha o ninguno */
@@ -58,7 +79,7 @@ p {
 }
 
 .noticia__img--left{
-    max-width:  40vw;
+    max-width:  30vw;
         margin:0px 20px 0px 20px;
     /* float: left;*/
     float: right;
@@ -68,6 +89,11 @@ p {
 .noticia__img--right{
     max-width:  40vw;
     float: left;
+    margin:20px 20px 20px 0px;
+}
+.noticia__img--none{
+    max-width:  80vw;
+    float: none;
     margin:20px 20px 20px 0px;
 }
 
@@ -83,6 +109,7 @@ footer{
   background-image: linear-gradient(
     55deg, rgb(165, 221, 184) 0%, rgb(33, 241, 120) 70%);
  /*paddding: 50%;*/
+  font-family: "Roboto","SUSE", "Bungee Static", "oi";
 }
 
 footer div img {
@@ -504,16 +531,17 @@ ul.menu-desplegable a:hover {
 /* Aside */
 
 div.aside { 
-    position:sticky;
-    width: 30%;
-    padding:10px;
-   margin: 20px;
+    /* position:relative; */
+    width: 40%;
+    padding:2px 3px;
+    margin: 5px 5px 5px 20px;
     float: right;
     z-index: -10;
     font-style: italic;
-    font-size: 14px;
+    font-size: 15px;
     color: #d8d1d1;
     background-color: rgb(81, 133, 79);
+    overflow: hidden;
 }
 
 /* PANELES*/
@@ -521,7 +549,7 @@ div.aside {
 #paneles-content {
     width: 50vw;
     height: 100%;
-    margin: 10px auto;
+    margin: 30px auto;
     border: 2px solid rgb(16, 170, 49);
     padding: 20px;
     background-color: #f7f4f5;
@@ -534,10 +562,11 @@ div.aside {
 
 /* estilo del titulo del panel*/
 
-h2 {
+/* h2 {
   font-family: "SUSE","Roboto", "Bungee Static", "oi";
   text-align: center;
-}
+} */
+
 /* estilo del label del panel*/
 
 .panel label {

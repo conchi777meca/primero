@@ -29,7 +29,7 @@ h1 {
   color: #011c2b;
   text-align: center;
   text-transform: uppercase;
-  background-color: antiquewhite;
+* background-color: antiquewhite;
 }
 
 #hueco{
