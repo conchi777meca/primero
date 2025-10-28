@@ -642,5 +642,6 @@ div.aside {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-family: "Roboto", sans-serif;
     }
 }

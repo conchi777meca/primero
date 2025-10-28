@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 
 body {
   background-color: #a8dd7c;
@@ -23,13 +25,12 @@ h1 {
   font-family: 'Rubik', sans-serif;
   /* padding: 3em 5em 3em 5em; */
   padding-top: 10px;
-
   /* margin-left: 20px; */
   /* margin-left: 2px;  */
   color: #011c2b;
   text-align: center;
   text-transform: uppercase;
-* background-color: antiquewhite;
+  background-color: antiquewhite;
 }
 
 #hueco{
@@ -55,7 +56,7 @@ a {
 
 p {
   line-height: 1.5;
-  font-family: "Roboto","SUSE", "Bungee Static", "oi";
+  font-family: "Roboto","SUSE", "Bungee Static", "oi", sans-serif;
 
 }
 
@@ -432,7 +433,7 @@ footer{
   background-image: linear-gradient(
     55deg, rgb(165, 221, 184) 0%, rgb(33, 241, 120) 70%);
  /*paddding: 50%;*/
-   /* max-width: 100%; */
+   max-width: 100%;
 
 
 }
