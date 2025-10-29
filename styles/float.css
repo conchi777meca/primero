@@ -57,7 +57,6 @@ a {
 p {
   line-height: 1.5;
   font-family: "Roboto","SUSE", "Bungee Static", "oi", sans-serif;
-
 }
 
 /* posicion, fondo y linea inferior de nav */
@@ -71,13 +70,13 @@ nav {
   align-items: center;
   border-bottom: 2.5px solid rgb(26, 61, 177);
   background-color: #f2f5f7;
-    z-index: 100;
-    font-family: 'Rubik', sans-serif;
+  z-index: 100;
+  font-family: 'Rubik', sans-serif;
 }
 
 nav ul {
   display: flex;
-  gap: 50px;
+  gap: 70px;
   /*espacio entre elementos*/
 }
 
@@ -217,7 +216,8 @@ ul.menu-desplegable a:hover {
  
         /* estilo del contenedor */
 .galeria {
-  width: 535px;
+  width: 580px;
+   /* width: 535px; */
   /* debemos dar un ancho fijo */
   margin: 20px auto;
   overflow: hidden;
@@ -235,6 +235,7 @@ ul.menu-desplegable a:hover {
   left: 50px;
   /* !!Ancho de la parte visible!! */
   width: 335px;
+   /* width: 350px; */
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.6);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
