@@ -164,10 +164,16 @@ ul.menu-desplegable a:hover {
 }
 
 /* Pongo las noticas con imagen float a la izquierda, derecha o ninguno */
-.noticia{
+div.noticia{
     max-width: 80vw;
-    margin:auto;
+    margin:0px 0px 20px 0px;
     line-height: 1.5;
+    background-image:  url("../image/un-entorno-rural-tranquilo-la-luz-del-dia.jpg");
+    background-repeat: no-repeat;
+    background-position: center 10%;
+    background-size:100%;
+    backdrop-filter: blur(10px);
+z-index: -10;
 }
 
 .noticia__img--none {
@@ -175,7 +181,11 @@ ul.menu-desplegable a:hover {
   max-width: 40vw;
   margin: auto;
   border-radius: 50%;
+  border: 2px solid #f1eded;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento y desenfoque */
+  filter: grayscale(50%);
 }
+
 
 .noticia__img--left {
   max-width: 40vw;

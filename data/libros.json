@@ -1,0 +1,87 @@
+[
+  {
+    "titulo": "Cien años de soledad",
+    "autor": "Gabriel García Márquez",
+    "genero": "Realismo mágico",
+    "sinopsis": "La obra maestra de Gabriel García Márquez que narra la historia de la familia Buendía en el mítico pueblo de Macondo, explorando temas de amor, muerte, destino y la repetición cíclica de la historia.",
+    "precio": 15.99
+  },
+  {
+    "titulo": "1984",
+    "autor": "George Orwell",
+    "genero": "Distopía, Ciencia ficción",
+    "sinopsis": "En una sociedad totalitaria bajo el control del Partido y su líder, el Gran Hermano, Winston Smith lucha por encontrar la verdad y la libertad en un mundo donde todo está vigilado y manipulado.",
+    "precio": 12.50
+  },
+  {
+    "titulo": "El nombre del viento",
+    "autor": "Patrick Rothfuss",
+    "genero": "Fantasía",
+    "sinopsis": "El primer libro de la serie 'Crónica del asesino de reyes', que cuenta la historia de Kvothe, un joven prodigio que se convierte en leyenda, mientras narra su vida desde su niñez hasta su adultez.",
+    "precio": 18.99
+  },
+  {
+    "titulo": "El Hobbit",
+    "autor": "J.R.R. Tolkien",
+    "genero": "Fantasía",
+    "sinopsis": "Bilbo Bolsón, un hobbit que disfruta de una vida tranquila, se ve arrastrado a una aventura épica con un grupo de enanos para recuperar un tesoro custodiado por el dragón Smaug. En su viaje, enfrentará criaturas y desafíos que cambiarán su vida para siempre.",
+    "precio": 16.00
+  },
+  {
+    "titulo": "Dune",
+    "autor": "Frank Herbert",
+    "genero": "Ciencia ficción",
+    "sinopsis": "En un futuro distante, la familia Atreides es enviada a gobernar el planeta desértico Arrakis, la única fuente de una valiosa sustancia conocida como 'especia'. Paul Atreides deberá enfrentar intrigas políticas, traiciones y luchas por el control del universo.",
+    "precio": 20.00
+  },
+  {
+    "titulo": "Fahrenheit 451",
+    "autor": "Ray Bradbury",
+    "genero": "Ciencia ficción, Distopía",
+    "sinopsis": "En una sociedad futurista donde los libros están prohibidos y los 'bomberos' queman cualquier libro que encuentren, Guy Montag es un bombero que empieza a cuestionar su papel en este mundo. Su viaje hacia la rebelión lo lleva a descubrir el poder de la literatura.",
+    "precio": 12.99
+  },
+  {
+    "titulo": "Frankenstein",
+    "autor": "Mary Shelley",
+    "genero": "Terror, Ciencia ficción gótica",
+    "sinopsis": "Victor Frankenstein, un joven científico, crea una criatura a partir de cadáveres humanos. Sin embargo, la criatura, rechazada por su creador, busca venganza, desatando una tragedia que cambiará la vida de todos los involucrados.",
+    "precio": 8.50
+  },
+  {
+    "titulo": "Drácula",
+    "autor": "Bram Stoker",
+    "genero": "Terror, Gótico",
+    "sinopsis": "El conde Drácula, un antiguo y poderoso vampiro, llega a Inglaterra con la intención de expandir su influencia y convertir a los humanos en vampiros. Jonathan Harker y sus amigos deben detener a Drácula antes de que su maldad destruya a muchos.",
+    "precio": 9.90
+  },
+  {
+    "titulo": "Neuromancer",
+    "autor": "William Gibson",
+    "genero": "Ciencia ficción, Cyberpunk",
+    "sinopsis": "Case, un hacker caído en desgracia, es contratado por un misterioso empleador para realizar un trabajo de alto riesgo en el ciberespacio. A lo largo de la novela, se exploran temas de inteligencia artificial, redes virtuales y el futuro de la humanidad.",
+    "precio": 14.00
+  },
+  {
+    "titulo": "El ciclo de la puerta de la muerte",
+    "autor": "Margaret Weis y Tracy Hickman",
+    "genero": "Fantasía",
+    "sinopsis": "Cuatro mundos interconectados por puertas mágicas están al borde de la destrucción. Un joven héroe llamado Haplo es elegido para cumplir una misión crucial que podría salvar o destruir estos mundos. Un viaje lleno de magia, intriga y personajes inolvidables.",
+    "precio": 19.99
+  },
+  {
+    "titulo": "El retrato de Dorian Gray",
+    "autor": "Oscar Wilde",
+    "genero": "Clásico, Filosófico, Terror psicológico",
+    "sinopsis": "Dorian Gray es un joven de gran belleza que, al ver un retrato de sí mismo, desea que su imagen envejezca en su lugar. A lo largo de la historia, su vida de excesos y hedonismo lo lleva a un destino oscuro y aterrador, mientras su retrato refleja los efectos de sus acciones.",
+    "precio": 11.00
+  },
+  {
+    "titulo": "El mago de Oz",
+    "autor": "L. Frank Baum",
+    "genero": "Fantasía, Aventura",
+    "sinopsis": "Dorothy, una niña de Kansas, es llevada por un tornado a la mágica Tierra de Oz, donde hace nuevos amigos y busca al Mago de Oz para que la ayude a regresar a casa. Una historia clásica de amistad, valentía y magia.",
+    "precio": 7.95
+  }
+]
+
