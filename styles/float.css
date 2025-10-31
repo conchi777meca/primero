@@ -166,14 +166,16 @@ ul.menu-desplegable a:hover {
 /* Pongo las noticas con imagen float a la izquierda, derecha o ninguno */
 div.noticia{
     max-width: 80vw;
-    margin:0px 0px 20px 0px;
+    height:100vw;
+    margin:0px 0px 40px 0px;
     line-height: 1.5;
-    background-image:  url("../image/un-entorno-rural-tranquilo-la-luz-del-dia.jpg");
+    /* background-image:  url("../image/junglas-1024x683.jpg"); */
+       background-image:  url("../image/un-entorno-rural-tranquilo-la-luz-del-dia.jpg");
     background-repeat: no-repeat;
+    /* background-position:  50% 50%; */
     background-position: center 10%;
     background-size:100%;
-    backdrop-filter: blur(10px);
-z-index: -10;
+    backdrop-filter: blur(30px);
 }
 
 .noticia__img--none {

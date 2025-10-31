@@ -118,6 +118,18 @@ p {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento y desenfoque */
 }
 
+.imagen-tabla {
+  border-radius: 15px;
+  /* Esto redondea las cuatro esquinas */
+  width: 300px;
+  /* Opcional: ajusta el tamaño de la imagen */
+    border: 3px solid #db8d26;
+  /* Opcional: añade un borde */
+  object-fit: cover;
+  /* Para que la imagen no se distorsione si no es cuadrada */
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento y desenfoque */
+}
+
 .imagen-redondeada {
   border-radius: 15px;
   /* Esto redondea las cuatro esquinas */
