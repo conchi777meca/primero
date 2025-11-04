@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llamada a API Perros</title>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" name="menu" id="menu">
+        <label for="menu"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg> </label>
+
+
+        <a class="menu-desplegable" href="../index.html"> <img src="../imagenes/gato-favicon.jpg" alt="logo de inicio">
+        </a>
+        <ul class="menu-desplegable">
+            <li><a href="../pages/galeria-cuadr.html">Galería</a></li>
+            <li><a href="../pages/float.html">Float</a></li>
+            <li><a href="../pages/navbarnuevo.html">Desplegables</a></li>
+            <li><a href="../pages/header2.html">IntroJS</a></li>
+            <li><a href="../pages/keyframes.html">Animaciones</a></li>
+            <li><a href="../pages/practicajsn.html">Libros JSON</a></li>
+            <li><a href="../pages/apiperros.html">API Perros</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <form id="form-raza">
+            <label for="raza">Selecciona una raza:</label>
+            <select id="raza" name="raza" required>
+                <!-- Las razas se cargan desde la API-->
+            </select>
+            <button type="submit">Ver perro</button>
+        </form>
+
+
+
+        <button id="btn-random">Ver perro aleatorio</button>
+        <div id="resultado"></div>
+
+    </main>
+
+    <script src="../js/apiperros.js"></script>
+</body>
+
+</html>

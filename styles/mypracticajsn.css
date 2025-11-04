@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+  background-color: #a8dd7c;
+  margin: 0;
+  padding: 0;
+  /* width: 100vw; */
+  line-height: 1.5;
+
+}
+
+main {
+
+  font-family: 'Rubik', sans-serif;
+  max-width: 80%;
+  margin: 0 auto;
+  /*min-width:;*/
+  /* margin-left : 15px; */
+  /* padding-top: 100px; */
+}
+
+
+
+h1,h2 {
+  /*font-family: "Bungee Static", "Archivo BlackStatic", "SUSE", "roboto", "oi" 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, "Barriecito";*/
+  font-family: "Roboto", "SUSE","Bungee Static", "oi", sans-serif;
+  background-color: antiquewhite;
+}
+
+h3 {
+  font-family: "Roboto", "SUSE","Bungee Static", "oi", sans-serif;
+}
+#hueco{
+  height: 100px;
+}
+
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  /* padding: 3em 5em 3em 5em; */
+  padding-top: 10px;
+  /* margin-left: 20px; */
+  /* margin-left: 2px;  */
+  color: #011c2b;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: antiquewhite;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  /* padding: 3em 5em 3em 5em; */
+  padding-top: 20px;
+
+  /* margin-left: 20px; */
+  /* margin-left: 2px;  */
+  color: #011c2b;
+  text-align: left;
+  text-transform: uppercase;
+  background-color: antiquewhite;
+}
+
+a {
+  color: #a30cb1;
+}
+
+p {
+  line-height: 1.5;
+  font-family: "Roboto","SUSE", "Bungee Static", "oi", sans-serif;
+
+}
+
+#lista-libros{
+font-size: 19px;
+  font-family: "sans-serif", "arial";
+  list-style-type: none;
+  padding-top: 100px; 
+  margin-left: 20px;
+}
+
+
+#lista1 {
+  /* font-size:2em;  */
+  font-size: 19px;
+  font-family: "sans-serif", "arial";
+  list-style-type: none;
+  padding-top: 100px; 
+  margin-left: 20px;
+/* z-index: 1; */
+}
+
+
+#lista2 {
+  font-size: 1em;
+  font-family: "arial";
+   padding-top: 100px; 
+   margin-left: 20px;
+}
+
+#lista-de-imagenes {
+  font-size: 2em;
+  font-family: "arial";
+  padding-top: 100px; 
+  margin-left: 20px;
+}
+
+#lista-de-naturaleza {
+  font-size: 2em;
+  font-family: "arial";
+  padding-top: 100px; 
+  margin-left: 20px;
+}
+
+.imagen {
+  border-radius: 15px;
+  /* Esto redondea las cuatro esquinas */
+  width: 300px;
+  /* Opcional: ajusta el tamaño de la imagen */
+  /* height: 200px; */
+  /* Opcional: ajusta el tamaño de la imagen */
+  border: 3px solid #3eb7e7;
+  /* Opcional: añade un borde */
+  object-fit: cover;
+  /* Para que la imagen no se distorsione si no es cuadrada */
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento y desenfoque */
+}
+
+.imagen-tabla {
+  border-radius: 15px;
+  /* Esto redondea las cuatro esquinas */
+  width: 300px;
+  /* Opcional: ajusta el tamaño de la imagen */
+    border: 3px solid #db8d26;
+  /* Opcional: añade un borde */
+  object-fit: cover;
+  /* Para que la imagen no se distorsione si no es cuadrada */
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento y desenfoque */
+}
+
+.imagen-redondeada {
+  border-radius: 15px;
+  /* Esto redondea las cuatro esquinas */
+  width: 200px;
+  /* Opcional: ajusta el tamaño de la imagen */
+  height: 200px;
+  /* Opcional: ajusta el tamaño de la imagen */
+  border: 3px solid #000;
+  /* Opcional: añade un borde */
+  object-fit: cover;
+  /* Para que la imagen no se distorsione si no es cuadrada */
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento y desenfoque */
+}
+.imagen-circular {
+  border-radius: 50%;
+  /* Esto crea un círculo perfecto si la imagen es cuadrada */
+  width: 200px;
+  /* height: 200px; */
+  object-fit: cover;
+   border: 3px solid #f1eded;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento y desenfoque */
+}
+
+.imagen-circular:hover {
+  border-radius: 50%;
+  /* Esto crea un círculo perfecto si la imagen es cuadrada */
+  width: 250px;
+  /* height: 250px; */
+  object-fit: cover;
+   border: 3px solid #f1eded;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento y desenfoque */
+}
+.imagen-sombra {
+  border-radius: 30% 20%;
+  width: 200px;
+  height: 200px;
+   border: 3px solid #047420;
+   filter: grayscale(90%);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento y desenfoque */
+}
+.imagen-sombra:hover {
+  border-radius: 30% 20%;
+  width: 200px;
+  height: 200px;
+   border: 3px solid #047420;
+ filter:none;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento y desenfoque */
+}
+.imagen-brillo {
+  border-radius: 5px;
+  width: 200px;
+  /* height: 200px; */
+  border: 3px solid #da9008;
+  /* Opcional: añade un borde */
+  filter: brightness(1);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento y desenfoque */
+}
+.imagen-brillo:hover {
+  border-radius: 5px;
+  /* width: 250px; */
+  /* height: 250px; */
+  border: 3px solid #da9008; /* Opcional: añade un borde */
+   filter: brightness(1.5);
+}
+
+
+#texto-especial {
+  background: #74bb17;
+  padding: 8px 12px;
+  vertical-align: text-bottom;
+ }
+
+.caja-especial {
+  border-left: 2px solid #061430;
+  border-bottom: 2px solid #eb2727;
+  border-right: 2px solid #061430;
+  border-top: 2px solid #eb2727;
+  margin: 20px 0px;
+}
+
+
+
+footer{
+  border-top: 4px solid #09862e;
+  background-color: #b9b0b0;
+  color: #0e0000;
+  padding: 20px; 
+  /* margin-top: 10px; */
+  /* padding: 10px;  */
+   text-align: left;
+  height: auto;
+  /* width: 100vw; */
+  /*background-color: #06301c;*/
+  background-image: linear-gradient(
+    55deg, rgb(165, 221, 184) 0%, rgb(33, 241, 120) 70%);
+ /*paddding: 50%;*/
+   max-width: 100%;
+
+
+}
+footer div img {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  border-radius: 50px 5px 70px 7px;
+}
+
+#botones {
+  display: flex;
+  flex-wrap: wrap;
+  /*salta linea*/
+  /* justify-content: space-between;
+  max-width: 80vw;
+  margin: auto; */
+
+}
+
+#indicador {
+  width: 15px;
+  height: 30px;
+  /* border-radius: 100%;
+  border: 1px solid rgb(146, 5, 34);*/
+  /* padding: 5px; */
+  /*background-color: #f2f5f7; */
+  position:relative;
+
+  bottom: 40px;
+  right: 40px;
+}
+
+#boton-arriba2{
+width: 40px;
+height: 40px;
+border-radius: 100%;
+border: 1px solid rgb(146, 5, 34);
+padding: 5px;
+background-color: #f2f5f7;
+position: fixed;
+bottom: 30px;
+right: 25px;
+}
+
+#boton-arriba2:hover{
+  background-color: #09031f;
+  border-style: none;
+  width: 43px;
+  height: 43px;
+  z-index: 1; 
+}
+
+@media screen and (min-width:1000px){
+    .noticia{
+        max-width: 60vw;
+    }
+  
+    .noticia p{
+        font-size: 1.5em ;
+    }    
+   
+    .noticia h1{
+        font-size: 3em ;
+    }
+    
+     body {
+        background-color: lightblue;
+    }
+}
+
+/* **************     header  **************      */
+header {
+    background-color: #a30cb1;
+    height: 100%;
+    background-image: url("../image/jonatan-pie-9P_VNWgeOxo-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px, 20px;
+    /* text-align: center; */
+    /* margin: 0;*/
+    padding:top;
+    /* padding: 3em 5em; */
+
+}
+
+header img {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    border-radius: 50px 50px 70px 70px;
+    /* transition: transform 1s; */
+    transition: 0.3s ease;
+}
+
+header img:hover {
+    /* transform: rotate(360deg); */
+    transform: scale(1.2);
+}
+
+header a {
+    border: 1px, solid #a30cb1;
+    border-radius: 29486px;
+    color: #f7f4f5;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 60px;
+    text-transform: uppercase;
+    transform: rotate(360deg);
+    /* transition-property: none 5ms ease-out; */
+    /* transition-property: color, background; */
+}
+
+header a:hover {
+    background-color: #fff;
+    color: #110101;
+}
+
+/*          galeria          */
+
+#grid {
+   display: grid;
+   height: auto;
+   /* grid-template: repeat(3, 1fr) / repeat(3, 1fr); */
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-gap: auto;
+   margin-bottom: 30px;
+   text-align: center;
+
+   
+}
+
+#grid > div {
+  background-color: rgb(192, 233, 192);
+  text-align: center;
+  padding: 20px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 1);
+}
+#grid > :hover{
+    transform: scale(1.1); /* la imagen se amplia*/
+    filter: none; /* quito el filtro*/
+    transition: all 0.3s ease-in-out; /*modifico como se hace la transicion de las propiedades de normal a hover. /propiedad/tiempo/modo/ */
+}
+
+/* posicion, fondo y linea inferior de nav */
+nav {
+  position: sticky;
+  top: 0px;
+  /*bottom: 40px;*/
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2.5px solid rgb(26, 61, 177);
+  background-color: #f2f5f7;
+    z-index: 100;
+    font-family: 'Rubik', sans-serif;
+}
+
+nav ul {
+  display: flex;
+  gap: 50px;
+  /*espacio entre elementos*/
+}
+
+nav img {
+  height: 50px;
+  width: 50px;
+  transition: 0.3s ease;
+}
+
+nav img:hover {
+  transform: rotate(360deg);
+  /*transform: scale(1.2);*/
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a:hover {
+  background-color: #092beb;
+  color: #dfd3d4;
+
+}
+
+nav li a {
+  padding: 8px 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: none 200ms ease-out;
+  color: rgb(26, 61, 177);
+}
+
+
+/* escondo el cuadrado del checkbox */
+#menu {
+  display: none;
+}
+
+/* redimensiono el icono de hamburguesa */
+nav svg {
+  width: 50px;
+  height: 50px;
+}
+
+/* escondo el logo y la lista */
+.menu-desplegable {
+  display: none;
+}
+
+/* cuando el checkbox está marcado, hago el logo y la lista visibles */
+input:checked~.menu-desplegable {
+  display: block;
+  text-align: center;
+}
+
+/* redimensiono el logo */
+/* nav a img {
+  width: 30%;
+} */
+
+/* quito los estilos predeterminados de la lista */
+ul.menu-desplegable {
+  list-style: none;
+  padding: 0;
+}
+
+/* añado separacion a los elementos de la lista */
+ul.menu-desplegable li {
+  padding: 0.5em;
+}
+
+/* pongo estilo a los enlaces de la lista */
+ul.menu-desplegable a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #4E75FF;
+  font-size: 1.5em;
+  padding: 0.2em 0.4em;
+}
+
+/* cambio los estilos de los enlaces cuando el cursor esta sobre ellos */
+ul.menu-desplegable a:hover {
+  background-color: #4E75FF;
+  color: white;
+}
+
+
+/* Defino los estilos que se van a aplicar cuando el ancho de pantalla sea minimo 1000px */
+@media (min-width:1000px) {
+
+    /* escondo el icono hamburguesa y el checkbox */
+    nav input {
+        display: none;
+    }
+
+    nav label {
+        display: none;
+    }
+
+    /* muestro el nav completo */
+    ul.menu-desplegable {
+        display: flex;
+        gap: 40px;
+    }
+
+    a.menu-desplegable {
+        display: block;
+    }
+
+    /* redimensiono el logo */
+    a.menu-desplegable img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* añado la colocacion de los elementos del nav en horizontal */
+    nav {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+    }
+}
