@@ -20,21 +20,19 @@ main {
   /* padding-top: 100px; */
 }
 
-
-
-h1,h2 {
+/* h1,h2 {
   /*font-family: "Bungee Static", "Archivo BlackStatic", "SUSE", "roboto", "oi" 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, "Barriecito";*/
-  font-family: "Roboto", "SUSE","Bungee Static", "oi", sans-serif;
+  /* font-family: "Roboto", "SUSE","Bungee Static", "oi", sans-serif;
   background-color: antiquewhite;
-}
+} */ 
 
 h3 {
   font-family: "Roboto", "SUSE","Bungee Static", "oi", sans-serif;
 }
+
 #hueco{
   height: 100px;
 }
-
 
 h1 {
   font-family: 'Rubik', sans-serif;
@@ -71,12 +69,12 @@ p {
 
 }
 
-#lista-libros{
-font-size: 19px;
-  font-family: "sans-serif", "arial";
+#lista-libros {
+  font-size: 19px;
+  font-family: 'Rubik', sans-serif;
   list-style-type: none;
-  padding-top: 100px; 
-  margin-left: 20px;
+  padding-top: 20px; 
+  margin: 20px;
 }
 
 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Canciones Spotify</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #login-button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+        #results { margin-top: 20px; }
+        .track-item { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 5px; }
+        .track-item h3 { margin-top: 0; color: #1DB954; }
+        .track-item a { color: #007bff; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <h1>Spotify: Lista de 5 Canciones</h1>
+
+    <div id="auth-section">
+        <p>Debes iniciar sesión con Spotify para buscar canciones.</p>
+        <button id="login-button">Iniciar Sesión con Spotify</button>
+    </div>
+
+    <div id="search-section" style="display: none;">
+        <p>¡Sesión iniciada! Buscando 5 canciones de "pop clásico"...</p>
+    </div>
+
+    <div id="results">
+        <h2>Resultados de la Búsqueda</h2>
+        </div>
+
+    <script src="../js/spotify.js"></script> 
+</body>
+</html>
