@@ -38,8 +38,9 @@ h1 {
   font-family: 'Rubik', sans-serif;
   /* padding: 3em 5em 3em 5em; */
   padding-top: 10px;
-  /* margin-left: 20px; */
-  /* margin-left: 2px;  */
+
+  margin-left: 20px;
+  margin-right: 20px; 
   color: #011c2b;
   text-align: center;
   text-transform: uppercase;

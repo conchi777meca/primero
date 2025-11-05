@@ -1,6 +1,6 @@
 // --- 1. CONFIGURACIÓN ---
 const CLIENT_ID = "da33e9c970654655a993fb65946d5f57"; // ¡IMPORTANTE! Reemplaza con tu Client ID de Spotify
-const REDIRECT_URI = 'http://127.0.0.1:5500/'; // ¡IMPORTANTE! Reemplaza con tu Redirect URI configurada en Spotify
+const REDIRECT_URI = 'https://conchi777meca.github.io/primero/pages/spotify.html'; // ¡IMPORTANTE! Reemplaza con tu Redirect URI configurada en Spotify
 const SCOPES = 'user-read-private user-read-email';
 const SEARCH_QUERY = 'genre:pop rock clásico'; // La búsqueda que quieras hacer
 const TRACK_LIMIT = 5;

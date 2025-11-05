@@ -8,21 +8,21 @@ function crearElementoLibro(libro) {
     title.className = 'titulo';
     title.textContent = libro.title;
 
-    const artist = document.createElement('p');
+    const artist = document.createElement('h3');
     artist.className = 'autor';
     // artist.textContent = libro.artist;
     artist.textContent = `Autor: ${libro.artist}`;
 
-    const album = document.createElement('p');
+    const album = document.createElement('h3');
     album.className = 'album';
     // album.textContent = libro.album;
     album.textContent = `Album: ${libro.album}`;
 
-    const duration = document.createElement('p');
+    const duration = document.createElement('h3');
     // duration.textContent = libro.duration;
     duration.textContent = `Duración: ${libro.duration}`;
 
-    const release_date = document.createElement('p');
+    const release_date = document.createElement('h3');
     // release_date.textContent = libro.release_date;
     release_date.textContent = `Fecha: ${libro.release_date}`;
     // precio.className = 'precio';

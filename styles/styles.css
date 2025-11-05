@@ -39,20 +39,18 @@ background-color: rgb(187, 231, 191);
 h2 {
 background-color: antiquewhite;;
 }
-/* h1,
-h2,
-h3
-strong {
+
+h1,h2,h3 strong {
   color: #011c2b;
   text-transform: uppercase;
   text-align: center;
   font-family: "Roboto", sans-serif;
-} */
+}
 
-h1 em{
+/* h1 em{
    font-size: 50px;
    text-align: left;
-}
+} */
 
 a {
   color: #a30cb1;
@@ -66,6 +64,7 @@ p {
   margin:auto;
 
 }
+
 /* Pongo las noticias con imagen float a la izquierda, derecha o ninguno */
 .noticia{
     max-width: 80vw;
@@ -224,6 +223,25 @@ div.content {
     left: 303px;
     border-top: 0px;
 }
+@media screen and (min-width:1000px){
+    .noticia{
+        max-width: 60vw;
+    }
+  
+    .noticia p{
+        font-size: 1.5em ;
+    }    
+   
+    .noticia h1{
+        font-size: 3em ;
+    }
+    
+     body {
+        background-color: lightblue;
+    }
+}
+
+/* **************     header  **************      */
 header {
   background-color: #8bb499;
   height: 100%;
@@ -608,6 +626,7 @@ div.aside {
     margin-bottom: 4px;
     /* margin-right: 1px; */
 }
+
 /* Defino los estilos que se van a aplicar cuando el ancho de pantalla sea minimo 1000px */
 @media (min-width:1000px) {
 
