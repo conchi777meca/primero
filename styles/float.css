@@ -196,12 +196,14 @@ div.noticia {
   width: 40vw;
   float: right;
   margin: 10px 0px 10px 20px;
+  overflow: hidden;
 }
 
 .noticia__img--rigth {
-  width: 100%;
+  width: 40vw;
   float: left;
   margin: 10px 20px 10px 0px;
+  overflow: hidden;
 }
 
 /* estilo del contenedor */
