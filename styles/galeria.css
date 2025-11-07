@@ -38,7 +38,8 @@ h1 {
 h2 {
   font-family: 'Rubik', sans-serif;
   /* padding: 3em 5em 3em 5em; */
-  padding-top: 20px;
+ padding: 0.5em 1em;
+ padding-top: 20px;
 
   /* margin-left: 20px; */
   /* margin-left: 2px;  */
@@ -54,7 +55,7 @@ a {
 
 p {
   line-height: 1.5;
-  font-family: "Roboto","SUSE", "Bungee Static", "oi";
+  font-family: "Roboto","SUSE", "Bungee Static", "oi", sans-serif;
 
 }
 
@@ -132,9 +133,13 @@ input:checked~.menu-desplegable {
 }
 
 /* redimensiono el logo */
-/* nav a img {
-  width: 30%;
-} */
+nav a img {
+    width: 30%;
+}
+nav img {
+    width: 30%;
+    height: 30%;
+}
 
 /* quito los estilos predeterminados de la lista */
 ul.menu-desplegable {

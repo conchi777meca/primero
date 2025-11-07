@@ -40,6 +40,7 @@ h1 {
 h2 {
   font-family: 'Rubik', sans-serif;
   /* padding: 3em 5em 3em 5em; */
+  padding: 0.5em 1em;
   padding-top: 20px;
 
   /* margin-left: 20px; */
@@ -133,10 +134,13 @@ input:checked~.menu-desplegable {
 }
 
 /* redimensiono el logo */
-/* nav a img {
+nav a img {
     width: 30%;
-} */
-
+}
+nav img {
+    width: 30%;
+    height: 30%;
+}
 /* quito los estilos predeterminados de la lista */
 ul.menu-desplegable {
   list-style: none;
@@ -165,6 +169,18 @@ ul.menu-desplegable a:hover {
 
 /* Pongo las noticas con imagen float a la izquierda, derecha o ninguno */
 div.noticia {
+  width: 80vw;
+  /* height: 100vw; */
+  margin: auto;
+  line-height: 1.5;
+    background-repeat: no-repeat;
+  /* background-position:  50% 50%; */
+  background-position: center 10%;
+  background-size: 100%;
+  backdrop-filter: blur(30px);
+}
+
+div.foto-fondo {
   width: 80vw;
   /* height: 100vw; */
   margin: auto;
@@ -208,15 +224,16 @@ div.noticia {
 
 /* estilo del contenedor */
 .galeria {
-  max-width: auto;
-  /* width: 580px; */
-  width: 535px;
+  /* max-width: auto; */
+  width: 600px;
+  /* width: 535px; */
   /* debemos dar un ancho fijo */
   margin: 20px auto;
   overflow: hidden;
   /* ocultamos lo que sobresalga de las imágenes del contenedor*/
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08);
   border: 7px solid rgba(189, 188, 188, 0.6);
+  /* height: 500px; */ /*para libros de distintas alturas*/
 }
 
 /* estilo para las imágenes de la galería */
@@ -227,14 +244,14 @@ div.noticia {
   /* colocamos todas arriba */
   left: 50px;
   /* !!Ancho de la parte visible!! */
-  width: auto;
-  /* width: 350px; */
+  width: 350px;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.6);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  /* height: 100%; *//*para libros de distintas alturas*/
 }
 
 /* estilo inicial para la primera imagen. > selector de hijo directo */
@@ -246,6 +263,8 @@ div.noticia {
 .galeria img {
   display: block;
   width: 100%;
+  /* height: 100%;
+  object-fit:cover; */ /*para libros de distintas alturas*/
 }
 
 /* estilo para los "controles de navegación" */
@@ -365,7 +384,7 @@ figure {
 
 @media screen and (min-width:521px) and (max-width: 720px) {
   .galeria {
-    width: 540px;
+    width: 460px;
   }
 
   .galeria figure {
@@ -388,7 +407,7 @@ figure {
 
 @media screen and (max-width: 520px) {
   .galeria {
-    width: 320px;
+    width: 280px;
   }
 
   .galeria figure {

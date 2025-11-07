@@ -23,13 +23,10 @@ body {
 
 
 h1,h2,h3 {
-  /* font-family: "Roboto","SUSE", "Bungee Static", "oi"; */
   font-family: "Roboto", sans-serif;
   text-align: center;
   color: #011c2b;
   text-transform: uppercase;
-  /* background-color: antiquewhite; */
-
 }
 
 h3 {
@@ -254,7 +251,6 @@ header {
   /* margin: 0;
   padding: 0;*/
   padding: 3em 5em;
-
 }
 
 header img {

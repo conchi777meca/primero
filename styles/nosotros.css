@@ -21,8 +21,6 @@ main {
   /* padding-top: 100px; */
 }
 
-
-
 h1,h2 {
   /*font-family: "Bungee Static", "Archivo BlackStatic", "SUSE", "roboto", "oi" 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, "Barriecito";*/
   font-family: "Roboto", "SUSE","Bungee Static", "oi", sans-serif;
@@ -52,6 +50,7 @@ h1 {
 h2 {
   font-family: 'Rubik', sans-serif;
   /* padding: 3em 5em 3em 5em; */
+  padding: 0.5em 1em;
   padding-top: 20px;
 
   /* margin-left: 20px; */
@@ -389,7 +388,7 @@ nav {
 
 nav ul {
   display: flex;
-  gap: 50px;
+  gap: 70px;
   /*espacio entre elementos*/
 }
 
@@ -446,9 +445,13 @@ input:checked~.menu-desplegable {
 }
 
 /* redimensiono el logo */
-/* nav a img {
-  width: 30%;
-} */
+nav a img {
+    width: 30%;
+}
+nav img {
+    width: 30%;
+    height: 30%;
+}
 
 /* quito los estilos predeterminados de la lista */
 ul.menu-desplegable {
@@ -492,7 +495,7 @@ ul.menu-desplegable a:hover {
     /* muestro el nav completo */
     ul.menu-desplegable {
         display: flex;
-        gap: 40px;
+        gap: 50px;
     }
 
     a.menu-desplegable {
@@ -501,8 +504,8 @@ ul.menu-desplegable a:hover {
 
     /* redimensiono el logo */
     a.menu-desplegable img {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
 
     /* añado la colocacion de los elementos del nav en horizontal */
@@ -510,7 +513,37 @@ ul.menu-desplegable a:hover {
         padding: 10px 20px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        font-family: "Roboto", sans-serif;
+        /* align-items: center;
+        font-family: "Roboto", sans-serif; */
     }
+}
+/* Defino los estilos que se van a aplicar cuando el ancho de pantalla sea minimo 1000px */
+@media screen and (min-width:1000px) {
+  .noticia {
+    max-width: 60vw;
+  }
+
+  .noticia p {
+    font-size: 1.5em;
+  }
+
+  .noticia h1 {
+    font-size: 3em;
+  }
+
+  body {
+    background-color: lightblue;
+  }
+
+  .galeria {
+    max-width: 60vw;
+
+  }
+
+  .galeria img {
+    /*calcula el ancho para 3 columnas restando el espacio de margen*/
+    width: calc(33.33% - 1em);
+    margin: 0.5em;
+
+  }
 }
